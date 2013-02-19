@@ -1,0 +1,997 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"addModule"
+			],
+			[
+				"var",
+				"var"
+			],
+			[
+				"con",
+				"consulta"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"create",
+				"createTextNode"
+			],
+			[
+				"div",
+				"divButton"
+			],
+			[
+				"di",
+				"divButton"
+			],
+			[
+				"pME",
+				"pMessage"
+			],
+			[
+				"h2",
+				"h2Titulo"
+			],
+			[
+				"but",
+				"buttonNew"
+			],
+			[
+				"butt",
+				"buttonAdd"
+			],
+			[
+				"button",
+				"buttonAdd"
+			],
+			[
+				"pMEs",
+				"pMessageText"
+			],
+			[
+				"Crea",
+				"createTextNode"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"e",
+				"echo	echo \"…\""
+			],
+			[
+				"el",
+				"elseif	elseif …"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"select",
+				"selectedIndex"
+			],
+			[
+				"ge",
+				"getElementsByName"
+			],
+			[
+				"is_nu",
+				"is_numeric"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"array_",
+				"array_keys"
+			],
+			[
+				"s",
+				"session_var"
+			],
+			[
+				"mys",
+				"mysql_error"
+			],
+			[
+				"exp",
+				"exp_date"
+			],
+			[
+				"en",
+				"end_year"
+			],
+			[
+				"end",
+				"end_month"
+			],
+			[
+				"admin",
+				"admin_name"
+			],
+			[
+				"mes",
+				"message_id"
+			],
+			[
+				"doc_id",
+				"doc_id"
+			],
+			[
+				"up",
+				"up_date"
+			],
+			[
+				"user",
+				"userName"
+			],
+			[
+				"binar",
+				"binarioComprimido"
+			],
+			[
+				"Descara",
+				"Descargar"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"inpu",
+				"inputType"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"li",
+				"libraries"
+			],
+			[
+				"ass",
+				"assign"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"to",
+				"totLabel"
+			],
+			[
+				"In",
+				"input	Tag"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"include",
+				"include_path"
+			],
+			[
+				"coun",
+				"countries"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"compa",
+				"company_name"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"he",
+				"height"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\narray(16) { \n	[\"company_name\"]=> string(7) \"Company\" \n	[\"icorporation_date\"]=> string(15) \"01-January-1963\" \n	[\"jurisdiction\"]=> string(11) \"Afghanistan\"\n	[\"type_business\"]=> string(8) \"business\" \n	[\"company_address\"]=> string(0) \"\" \n	[\"email\"]=> string(5) \"email\" \n	[\"phone\"]=> string(5) \"phone\" \n	[\"fax\"]=> string(3) \"fax\"\n\n 	[\"position_authorizations\"]=> string(8) \"position\" \n 	[\"full_legal_name_position_authorizations\"]=> string(10) \"legal name\" \n 	[\"email_position_authorizations\"]=> string(5) \"email\" \n 	[\"phone_position_authorizations\"]=> string(5) \"phone\"\n  	[\"position_super_administrator\"]=> string(8) \"position\"\n   	[\"name_super_administrator\"]=> string(4) \"name\" \n   	[\"phone_super_administrator\"]=> string(6) \"phoene\" \n   	[\"email_super_administrator\"]=> string(5) \"email\" }\n?>\n\n\n\nINSERT INTO `adminfinal`.`entity`\n(\n`id_user`,\n`company_name`,\n`incorporation_date`,\n`jurisdiction`,\n`type_business`,\n`company_address`,\n`email`,\n`phone`,\n`fax`,\n`position_authorizations`,\n`name_position_authorizations`,\n`email_position_authorizations`,\n`phone_position_authorizations`,\n`position_super_administrator`,\n`name_super_administrator`,\n`phone_super_administrator`,\n`email_super_administrator`,\n\n`previous_entity`,\n`creation_date`,\n`ip_address`,\n`confirm`)\nVALUES\n(\n\n id_user, \n company_name, \n incorporation_date: 0000-00-00 00:00:00}>,\n jurisdiction, \n type_business, \n company_address, \n email, \n phone, \n fax, \n position_authorizations, \n full_legal_name_position_authorizations, \n email_position_authorizations, \n phone_position_authorizations, \n position_super_administrator, \n name_super_administrator, \n phone_super_administrator, \n email_super_administrator, \n previous_entity, \n creation_date, \n ip_address, \n confirm: \n);\n\n\n\n-- --------------------------------------------------------------------------------\n-- Routine DDL\n-- Note: comments before and after the routine body will not be stored by the server\n-- --------------------------------------------------------------------------------\nDELIMITER $$\n\nCREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insert_cliente`\n(\nid_user int,\ncompany_name varchar(255),\nincorporation_date date,\njurisdiction varchar(255),\ntype_business varchar(255),\ncompany_address varchar(255),\nemail varchar(255),\nphone varchar(255),\nfax varchar(255),\nposition_authorizations varchar(45),\nname_position_authorizations varchar(45),\nemail_position_authorizations varchar(45),\nphone_position_authorizations varchar(45),\nposition_super_administrator varchar(45),\nname_super_administrator varchar(45),\nphone_super_administrator varchar(45),\nemail_super_administrator varchar(45),\nprevious_entity int,\ncreation_date varchar(255),\nip_address varchar(255),\nconfirm varchar(255))\nBEGIN\n\nINSERT INTO `adminfinal`.`entity`\n(\n`id_user`,\n`company_name`,\n`incorporation_date`,\n`jurisdiction`,\n`type_business`,\n`company_address`,\n`email`,\n`phone`,\n`fax`,\n`position_authorizations`,\n`name_position_authorizations`,\n`email_position_authorizations`,\n`phone_position_authorizations`,\n`position_super_administrator`,\n`name_super_administrator`,\n`phone_super_administrator`,\n`email_super_administrator`,\n`previous_entity`,\n`creation_date`,\n`ip_address`,\n`confirm`)\nVALUES\n(\n\n id_user, \n company_name, \n incorporation_date: 0000-00-00 00:00:00}>,\n jurisdiction, \n type_business, \n company_address, \n email, \n phone, \n fax, \n position_authorizations, \n full_legal_name_position_authorizations, \n email_position_authorizations, \n phone_position_authorizations, \n position_super_administrator, \n name_super_administrator, \n phone_super_administrator, \n email_super_administrator, \n previous_entity, \n creation_date, \n ip_address, \n confirm: \n);\n\nEND\n",
+			"settings":
+			{
+				"buffer_size": 3677,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 3280,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "businessLayer/message.php",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/addModule.tpl",
+			"settings":
+			{
+				"buffer_size": 10608,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "businessLayer/addModule.php",
+			"settings":
+			{
+				"buffer_size": 291,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/reports/all_users_documents.php",
+			"settings":
+			{
+				"buffer_size": 5280,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/components/documents/list.php",
+			"settings":
+			{
+				"buffer_size": 3140,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dataLayer/gestor.php",
+			"settings":
+			{
+				"buffer_size": 3444,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"I",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			],
+			[
+				"pake",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde	",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/admin.sublime-project",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/settings/admin_classes/new.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/configuration_docs.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/configuration.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/fromcliente.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/formCliente.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/addModule.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/countries.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/utilities.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/message.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/message.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/mensaje.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/css/message/message.css",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/libraries.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/htmlbody/menu.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/simulate.js",
+		"/C/Users/Edwin Toribio/Downloads/simple-lightbox-effect/simple-lightbox-effect/jquery.js",
+		"/C/Users/Edwin Toribio/Downloads/simple-lightbox-effect/simple-lightbox-effect/index.html",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/include.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/data/login.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/login.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/buscar.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/clientes.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/gestor.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/dataLayer",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122-2/public_html/content/admin/system_requests.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/content.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/system_requests/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/transactions/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/settings/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/profiles/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/system_log/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/system/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/user/transfers/incoming_earthport_final.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/messages/user_messages_grouped.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/messages/message_thread.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/messages/message_thread.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/session_check.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/all_users_profile_documents_modify.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/all_users_profile_documents.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/profiles/list_profile_document.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/classes/document.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/settings/admin_classes/modify.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/functions_high.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/settings/admin_classes/new.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/settings/admin_classes/modify.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/admin_classes/new.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/admin_classes/save.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/index.html",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/languages/english.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/system_requests/index_grouped.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/components/session_check.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/menu/admin/menu.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/all_users_documents.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/components/load_system_vars.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/components/menu/admin/menu.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/components/load_system.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/system_log/list.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/load_system_vars.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/settings/admin_classes/new.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/settings/admin_classes/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/system_log/index_grouped.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/system_log/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/components/system_messages/list.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/accounts/associate_card.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/portfolio/metal.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/public_html/content/admin/reports/all_users_all_cards_report.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/messages/search_profile.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/profiles/delete_doc.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/profiles/attach_doc.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/modules/FileUpload_ProofOfFunds/classes/TransferDocument.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/profiles/view_profile.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/document.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/descargar_archivo.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/pintpost.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/fromcliente.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/user/profile/attach_doc.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/sandbox_pfs/content/admin/profiles/attach_doc_.php",
+		"/C/Users/Edwin Toribio/Desktop/user_documents.sql",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/configuration.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/db_connect.php",
+		"/C/Users/Edwin Toribio/Desktop/user_documents_5.sql",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/all_users_all_cards_report.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/profiles/list_admins.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/db_connect_docs.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/configuration_docs.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/cards/_activate_card.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/all_users_profile_documents.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/portfolio_specific_commodity.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/announcement_box_text.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/accounts/list_accounts.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/all_users_balances_report.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/admin/reports/portfolio_specific_commodity_report.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/content/user/profile/modify_profile.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/reports/index.html",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/load_system.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/components/load_user_vars.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/public_html/public_html/sandbox_pfs/content/admin/profiles/view_profile.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/templates/login.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/data/gestor.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/include.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/templates/hola.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/epan1_nexorone.sql",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/guardar_archivo.php",
+		"/C/Program Files (x86)/Zend/phpMyAdmin/tbl_replace.php",
+		"/C/Program Files (x86)/Zend/MySQL51/my-huge.ini",
+		"/C/Program Files (x86)/Zend/MySQL51/my.ini",
+		"/C/Program Files (x86)/Zend/MySQL51/my-large.ini",
+		"/C/Program Files (x86)/Zend/ZendServer/etc/php.ini",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/dbconnect.inc.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AMI/public_ami/configuration.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AMI/public_ami/register.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AMI/public_html/register.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/gzip_archivo.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/listar_gzip.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/listar_archivos.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/index.html",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/Binarios/documents_types.sql/documents_types.sql",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/Binarios/documents_types.sql.gz",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/countries.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/smarty/plugins/function.html_select_date.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\AdminFinal",
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\,<open folders>",
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\EPA-Document\\130122\\",
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\EPA-Document\\130122\\public_html\\public_html\\content\\admin\\messages",
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\public_html,<open folders>,<open folders>",
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\public_html",
+			"C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\EPA-Document\\130122\\public_html\\public_html",
+			"C:\\Program Files (x86)\\Zend",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"header",
+			"();\n",
+			");\n",
+			"or die",
+			"menssage",
+			"alert",
+			"index?",
+			"headr",
+			"show-ms",
+			": ,",
+			" }>",
+			"<{",
+			"maxlength=\"255\"",
+			"requerido",
+			"relocate",
+			"valiContact",
+			"txtLegals",
+			"txtLegals1",
+			"txtNameContact",
+			"se crean los valores de tipo input",
+			"onclick=\"crearCampos()",
+			"varios/gestor.php",
+			"docuemnt",
+			"modify",
+			"view_all_",
+			"view_all_documents_modify",
+			"view_all_document_modify",
+			"();\n",
+			"requests\"",
+			"requests ",
+			"settings",
+			"setting",
+			"view_re",
+			"INTERESTS",
+			"mysql_error",
+			"mysl_error",
+			"MESSAGES",
+			"if ",
+			"href=\"index.php?section=messages&amp;item=new_message\"",
+			"width_average",
+			"view",
+			"['modify_document'] =",
+			"admin_class_permissions",
+			"$session_var['permissions']['execute_cancel'] = ",
+			"$session_var['permissions']['execute_cancel'] =",
+			"01.png",
+			"$session_var['permissions']",
+			"$session_var['permissions']=",
+			"$session_var['permissions']",
+			"menu ",
+			"menu",
+			"or die ",
+			"or die mysql_error()",
+			");\n",
+			"exp_date",
+			"no",
+			"no ",
+			"reports",
+			"global_system_reports",
+			"createProfilesChecked",
+			"<input type=\"submit\" name=\"save\" value=\"Save\" class=\"button\">",
+			"execute_cancel",
+			"uploadedFile",
+			"docs_types",
+			"new.php",
+			"titletable",
+			"admin_name",
+			"user",
+			"from",
+			"_name",
+			"_admin",
+			"_administra",
+			"pending",
+			"DOCUMENT",
+			"debug",
+			"dabug",
+			"\"<",
+			"1",
+			"0",
+			"1",
+			"\";\n",
+			"oncli",
+			"confirm('Are you",
+			"if (!confirm('Are you sure you want to PERMANENTLY delete this document? (When the user deletes a document it is not permanent, only hidden to him but visible to the admin)'))",
+			"Are you sure you want to PERMANENTLY delete this document? (When the user deletes a document it is not permanent, only hidden to him but visible to the admin)",
+			"validate_form",
+			"scrip",
+			"page",
+			"search_profile",
+			"consultar",
+			"andmin",
+			"Document:",
+			"consultarDoc",
+			"					",
+			"delete_doc.php",
+			"delete_doc",
+			"delete_doc.php",
+			"mod_data",
+			"POST",
+			"up_date",
+			"new_document",
+			"messages",
+			"document.alert",
+			"alert",
+			"elseif",
+			"elseif\"",
+			"elseis",
+			"elseis\"",
+			"upload",
+			"var_dump",
+			"'upload'",
+			"document.php",
+			"attach_doc",
+			";\n",
+			"\\TransferDocument.php",
+			"TransferDocument.php",
+			"\\TransferDocument.php",
+			"TransferDocument.php",
+			"\\TransferDocument.php",
+			"/TransferDocument.php",
+			"document.php",
+			"attach_doc",
+			"documen",
+			"view_profile",
+			"updocuments",
+			"attach_doc",
+			"../",
+			"list_prolfile_document.php"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			", ",
+			" ",
+			"'",
+			"divContact",
+			"labelNameContact",
+			"txtNameContact",
+			" ",
+			"checkbox",
+			"` (",
+			"','",
+			" ('",
+			"abbreviations",
+			"');",
+			"'",
+			" ",
+			"INSERT INTO `countries` (idcountries,countries) VALUES (",
+			",);",
+			"countries)",
+			"countries",
+			"idcountries",
+			"countries",
+			"countrie"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 3677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3676,
+								3676
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 3280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2344,
+								2344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "businessLayer/message.php",
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/addModule.tpl",
+					"settings":
+					{
+						"buffer_size": 10608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "businessLayer/addModule.php",
+					"settings":
+					{
+						"buffer_size": 291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/reports/all_users_documents.php",
+					"settings":
+					{
+						"buffer_size": 5280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1064,
+								1034
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/components/documents/list.php",
+					"settings":
+					{
+						"buffer_size": 3140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2695,
+								2695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1539.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "dataLayer/gestor.php",
+					"settings":
+					{
+						"buffer_size": 3444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Edwin Toribio/Desktop/AdminCLient.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 139.0,
+	"status_bar_visible": true
+}

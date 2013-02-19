@@ -1,0 +1,45 @@
+/* Lightbox background */
+#main-box {
+	display: none;
+	background: #161613;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1000;
+}
+
+/* Message Box */
+#msg-box {
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	margin-left: -200px;
+	width: 400px;
+	background: #FFFFFF;
+	color: #115577;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid #60bcef;
+	z-index: 1001;
+}
+/* Message Box */
+
+/* Image Box */
+#img-box {
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	margin-left: -210px;
+	width: 420px;
+	background: #FFFFFF;
+	color: #115577;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid #EE6633;
+	z-index: 1001;
+}
+/* Image Box */

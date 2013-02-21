@@ -15,10 +15,8 @@ class index
 
    global $smarty;
 
-                  // $smarty->assign('countrie',$datos);
    $smarty->display($TemplateAuxiliar);
-                  //$smarty->display('login.tpl');
-                  //$smarty ->display('home.tpl');
+                  
  }
 
  public function menu()
@@ -102,7 +100,7 @@ if ($_SESSION['isLogin'])
 
           if ($_GET["op"] =="r") 
           {
-            $_SESSION["msgIdClient"] == "r";
+            $_SESSION["msgIdClient"] = "r";
           }
 
           if (!is_null($_SESSION["msgIdClient"]) &&  $_SESSION["msgIdClient"] != "r")
@@ -125,7 +123,7 @@ if ($_SESSION['isLogin'])
             unset($_SESSION["addModuleOption"]);
             unset($_SESSION["entity"]);
             unset($_SESSION["msgIdClient"]);
-            $call->display('addModule.tpl');
+            $call->display('addModule2.tpl');
           } 
           else
           {

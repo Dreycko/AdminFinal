@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-02-18 14:32:36
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-20 16:12:23
          compiled from "templates\formCliente.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1184450e85bd9920072-10174052%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '031248fddc2a7704c2b871d38b18293c4529cb48' => 
     array (
       0 => 'templates\\formCliente.tpl',
-      1 => 1361215952,
+      1 => 1361377591,
       2 => 'file',
     ),
   ),
@@ -252,8 +252,8 @@ body{
 
            </td>
          </tr>
-         <!--<tr> 
-          <td>Registration number*:</td>
+         <tr> 
+          <!--<td>Registration number*:</td>
           <td><input type="text" name="required" id="registration_number" class="field_text"     /></td>
         </tr>
         <tr> -->
@@ -398,9 +398,6 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 
 
 </form>
-
-
-
 <?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
 
 

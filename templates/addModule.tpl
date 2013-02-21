@@ -221,22 +221,22 @@ body{
     <div  class="grid_4">
      <div>
       <table>
-        <tr> <td> <input type="checkbox" > English   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > French   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > German   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Spanish   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Japanese   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Turkish   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Russian   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Swedish   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Portuguese   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > SerboCroatian   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Nederlands   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Czech   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Italiano   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Chinese   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Greek   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Korean   <br> <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >English   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >French   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >German   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Spanish   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Japanese   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Turkish   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Russian   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Swedish   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Portuguese   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >SerboCroatian   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Nederlands   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Czech   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Italiano   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Chinese   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Greek   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Korean   <br> <br> </td> </tr>
       </table>
     </div>
   </div>

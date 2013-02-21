@@ -215,8 +215,8 @@ body{
              {html_select_date prefix='StartDate' time=$time start_year='-50' end_year='+1' display_days=true}
            </td>
          </tr>
-         <!--<tr> 
-          <td>Registration number*:</td>
+         <tr> 
+          <!--<td>Registration number*:</td>
           <td><input type="text" name="required" id="registration_number" class="field_text"     /></td>
         </tr>
         <tr> -->
@@ -356,9 +356,6 @@ body{
 
 
 </form>
-
-
-
 {$footer}
 
 </body>

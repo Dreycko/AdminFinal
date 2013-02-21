@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-02-18 15:16:41
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-21 11:19:47
          compiled from "templates\addModule.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2183150ef10d31b4d33-61909213%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1ffe1d616a429c873a01a52ba61630945675ee5e' => 
     array (
       0 => 'templates\\addModule.tpl',
-      1 => 1361218590,
+      1 => 1361460982,
       2 => 'file',
     ),
   ),
@@ -257,22 +257,22 @@ body{
     <div  class="grid_4">
      <div>
       <table>
-        <tr> <td> <input type="checkbox" > English   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > French   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > German   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Spanish   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Japanese   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Turkish   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Russian   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Swedish   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Portuguese   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > SerboCroatian   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Nederlands   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Czech   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Italiano   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Chinese   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Greek   <br> </td> </tr>
-        <tr> <td> <input type="checkbox" > Korean   <br> <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >English   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >French   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >German   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Spanish   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Japanese   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Turkish   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Russian   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Swedish   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Portuguese   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >SerboCroatian   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Nederlands   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Czech   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Italiano   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Chinese   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Greek   <br> </td> </tr>
+        <tr> <td> <input type="checkbox" >Korean   <br> <br> </td> </tr>
       </table>
     </div>
   </div>

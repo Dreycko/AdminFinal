@@ -257,11 +257,11 @@ body{
     <h3>NexorONE® Core Package</h3>
     <div>
       <table>
-        <tr><td><input id ="1" type="checkbox" name="checkbox" value="1"> Multiple Administrators <br></td> </tr>
-        <tr><td><input id ="2" type="checkbox" name="checkbox" value="2"> Profile Groups <br></td> </tr>
-        <tr><td><input id ="3" type="checkbox" name="checkbox" value="3"> Calendar <br></td> </tr>
-        <tr><td><input id ="4" type="checkbox" name="checkbox" value="4"> Help System <br></td> </tr>
-        <tr><td><input id ="35" type="checkbox" name="checkbox" value="35"> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr>
+        <tr><td><input id ="1" type="checkbox" name="checkbox[]" value="1"> Multiple Administrators <br></td> </tr>
+        <tr><td><input id ="2" type="checkbox" name="checkbox[]" value="2"> Profile Groups <br></td> </tr>
+        <tr><td><input id ="3" type="checkbox" name="checkbox[]" value="3"> Calendar <br></td> </tr>
+        <tr><td><input id ="4" type="checkbox" name="checkbox[]" value="4"> Help System <br></td> </tr>
+        <tr><td><input id ="35" type="checkbox" name="checkbox[]" value="35"> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr>
       </table>
     </div>
 
@@ -269,34 +269,34 @@ body{
     <h3>Operations Enhancement Modules</h3>
     <div>
      <table>
-      <tr><td><input id ="5" type="checkbox" name="checkbox" value="5"> Interest &amp; Term Deposits Module <br></td> </tr>
-      <tr><td><input id ="6" type="checkbox" name="checkbox" value="6"> Certificate of Deposits Generator (PDF) <br></td> </tr>
-      <tr><td><input id ="7" type="checkbox" name="checkbox" value="7"> Minimum Balance Module <br></td> </tr>
-      <tr><td><input id ="8" type="checkbox" name="checkbox" value="8"> Monthly Fee Module <br></td> </tr>
-      <tr><td><input id ="9" type="checkbox" name="checkbox" value="9"> Line of Credit Module <br></td> </tr>
-      <tr><td><input id ="10" type="checkbox" name="checkbox" value="10"> Recurring Transfers Between Users <br></td> </tr>
-      <tr><td><input id ="11" type="checkbox" name="checkbox" value="11"> Loan Module <br></td> </tr>
+      <tr><td><input id ="5" type="checkbox" name="checkbox[]" value="5"> Interest &amp; Term Deposits Module <br></td> </tr>
+      <tr><td><input id ="6" type="checkbox" name="checkbox[]" value="6"> Certificate of Deposits Generator (PDF) <br></td> </tr>
+      <tr><td><input id ="7" type="checkbox" name="checkbox[]" value="7"> Minimum Balance Module <br></td> </tr>
+      <tr><td><input id ="8" type="checkbox" name="checkbox[]" value="8"> Monthly Fee Module <br></td> </tr>
+      <tr><td><input id ="9" type="checkbox" name="checkbox[]" value="9"> Line of Credit Module <br></td> </tr>
+      <tr><td><input id ="10" type="checkbox" name="checkbox[]" value="10"> Recurring Transfers Between Users <br></td> </tr>
+      <tr><td><input id ="11" type="checkbox" name="checkbox[]" value="11"> Loan Module <br></td> </tr>
     </table>
   </div>
 
   <h3>Compliance Protocol Enhancement Modules</h3>
   <div>
     <table>
-      <tr><td><input id ="12" type="checkbox" name="checkbox" value="12"> Terms &amp; Conditions Module <br></td> </tr>
-      <tr><td><input id ="13" type="checkbox" name="checkbox" value="13"> File Upload Interface Module - Profile Documents <br></td> </tr>
-      <tr><td><input id ="14" type="checkbox" name="checkbox" value="14"> File Upload Interface Module - Proof of Funds <br></td> </tr>
+      <tr><td><input id ="12" type="checkbox" name="checkbox[]" value="12"> Terms &amp; Conditions Module <br></td> </tr>
+      <tr><td><input id ="13" type="checkbox" name="checkbox[]" value="13"> File Upload Interface Module - Profile Documents <br></td> </tr>
+      <tr><td><input id ="14" type="checkbox" name="checkbox[]" value="14"> File Upload Interface Module - Proof of Funds <br></td> </tr>
     </table>
   </div>
 
   <h3>Large Scale Operations Enhancement Modules</h3>
   <div>
     <table>
-      <tr><td><input id ="15" type="checkbox" name="checkbox" value="15"> News Page Module <br></td> </tr>
-      <tr><td><input id ="16" type="checkbox" name="checkbox" value="16"> Editable Transactions Module <br></td> </tr>
-      <tr><td><input id ="17" type="checkbox" name="checkbox" value="17"> Import Transactions Module <br></td> </tr>
-      <tr><td><input id ="18" type="checkbox" name="checkbox" value="18"> Automated Username/Password Reset Module <br></td> </tr>
-      <tr><td><input id ="19" type="checkbox" name="checkbox" value="19"> Customer Service Control Module <br></td> </tr>
-      <tr><td><input id ="20" type="checkbox" name="checkbox" value="20"> Requests Matrix Module <br></td> </tr>
+      <tr><td><input id ="15" type="checkbox" name="checkbox[]" value="15"> News Page Module <br></td> </tr>
+      <tr><td><input id ="16" type="checkbox" name="checkbox[]" value="16"> Editable Transactions Module <br></td> </tr>
+      <tr><td><input id ="17" type="checkbox" name="checkbox[]" value="17"> Import Transactions Module <br></td> </tr>
+      <tr><td><input id ="18" type="checkbox" name="checkbox[]" value="18"> Automated Username/Password Reset Module <br></td> </tr>
+      <tr><td><input id ="19" type="checkbox" name="checkbox[]" value="19"> Customer Service Control Module <br></td> </tr>
+      <tr><td><input id ="20" type="checkbox" name="checkbox[]" value="20"> Requests Matrix Module <br></td> </tr>
     </table>
   </div>
 
@@ -304,24 +304,24 @@ body{
   <h3>Business Expansion Modules</h3>
   <div>
     <table>
-      <tr><td><input id ="21" type="checkbox" name="checkbox" value="21"> Debit Card Funding Module (Passive) <br></td> </tr>
-      <tr><td><input id ="22" type="checkbox" name="checkbox" value="22"> Portfolio and Commodities Module (Passive) <br></td> </tr>
-      <tr><td><input id ="23" type="checkbox" name="checkbox" value="23"> FX Module (Transfers between Accounts of Different Currencies) <br></td> </tr>
-      <tr><td><input id ="24" type="checkbox" name="checkbox" value="24"> Commissions Module <br></td> </tr>
-      <tr><td><input id ="25" type="checkbox" name="checkbox" value="25"> OFAC Compliance Module <br></td> </tr>
+      <tr><td><input id ="21" type="checkbox" name="checkbox[]" value="21"> Debit Card Funding Module (Passive) <br></td> </tr>
+      <tr><td><input id ="22" type="checkbox" name="checkbox[]" value="22"> Portfolio and Commodities Module (Passive) <br></td> </tr>
+      <tr><td><input id ="23" type="checkbox" name="checkbox[]" value="23"> FX Module (Transfers between Accounts of Different Currencies) <br></td> </tr>
+      <tr><td><input id ="24" type="checkbox" name="checkbox[]" value="24"> Commissions Module <br></td> </tr>
+      <tr><td><input id ="25" type="checkbox" name="checkbox[]" value="25"> OFAC Compliance Module <br></td> </tr>
     </table>
   </div>
 
   <h3>External Service Provider Integrations</h3>
   <div>
     <table>
-      <tr><td><input id ="26" type="checkbox" name="checkbox" value="26"> Earthport Integration Module <br></td> </tr>
-      <tr><td><input id ="27" type="checkbox" name="checkbox" value="27"> Earthport V6 Integration Module <br></td> </tr>
-      <tr><td><input id ="28" type="checkbox" name="checkbox" value="28"> Earthport Direct Integration Module <br></td> </tr>
-      <tr><td><input id ="29" type="checkbox" name="checkbox" value="29"> Prepaid Financial Services Integration Module <br></td> </tr>
-      <tr><td><input id ="30" type="checkbox" name="checkbox" value="30"> CCS Prepay Integration Module <br></td> </tr>
-      <tr><td><input id ="31" type="checkbox" name="checkbox" value="31"> Banclear Integration Module <br></td> </tr>
-      <tr><td><input id ="32" type="checkbox" name="checkbox" value="32"> eGateway Integration Module <br></td> </tr>
+      <tr><td><input id ="26" type="checkbox" name="checkbox[]" value="26"> Earthport Integration Module <br></td> </tr>
+      <tr><td><input id ="27" type="checkbox" name="checkbox[]" value="27"> Earthport V6 Integration Module <br></td> </tr>
+      <tr><td><input id ="28" type="checkbox" name="checkbox[]" value="28"> Earthport Direct Integration Module <br></td> </tr>
+      <tr><td><input id ="29" type="checkbox" name="checkbox[]" value="29"> Prepaid Financial Services Integration Module <br></td> </tr>
+      <tr><td><input id ="30" type="checkbox" name="checkbox[]" value="30"> CCS Prepay Integration Module <br></td> </tr>
+      <tr><td><input id ="31" type="checkbox" name="checkbox[]" value="31"> Banclear Integration Module <br></td> </tr>
+      <tr><td><input id ="32" type="checkbox" name="checkbox[]" value="32"> eGateway Integration Module <br></td> </tr>
     </table>
   </div>
 
@@ -329,13 +329,13 @@ body{
   <h3>Other Modules</h3>
   <div>
     <table>
-      <tr><td><input id ="33" type="checkbox" name="checkbox" value="33"> Currency Conversion Tool <br></td> </tr>
-      <tr><td><input id ="34" type="checkbox" name="checkbox" value="34"> Pro Tooltips <br></td> </tr>
+      <tr><td><input id ="33" type="checkbox" name="checkbox[]" value="33"> Currency Conversion Tool <br></td> </tr>
+      <tr><td><input id ="34" type="checkbox" name="checkbox[]" value="34"> Pro Tooltips <br></td> </tr>
     </table>
   </div>
 </div>   
 <center>
-  <button class="push_6">save</button>
+  <button class="push_6" onclick="this.form.action='businessLayer/addModule.php?op=g'">save</button>
 
 </center>
 

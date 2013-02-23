@@ -241,7 +241,7 @@ class gestor
 	{
 
 		//definimos el directoriode los archivos	
-		$pathTempalte = "../templates/";
+		/*$pathTempalte = "../templates/";
 		$dir = opendir($pathTempalte);
 		while ($elemento = readdir($dir))
 		{ 
@@ -259,11 +259,11 @@ class gestor
 			closedir($dir);
 			var_dump(unlink($aBorrar));
 
-		}
+		}*/
 		
 			//cache
 		//echo "cache";
-		/*$pathTempalte_c = "../templates_c/";
+		$pathTempalte_c = "../templates_c/";
 		//echo $pathTempalte_C ;
 		$dir_c = opendir($pathTempalte_c);
 		//var_dump($dir_c);
@@ -273,15 +273,27 @@ class gestor
 			//echo substr($elemento_c, -18,18)."</br>" ;
 			if (substr($elemento_c, -18,18) =="addModule2.tpl.php" )
 			{	
-				//echo $elemento_c;
-				//echo substr($elemento_c, -14,14) ;
-				//echo $elemento_c." tamano de letras".strlen($elemento_c)."</br>";	
-				var_dump(unlink($elemento_c));
+				$file = $elemento_c;
+
+				
 			}	
-		}*/
-		//closedir($dir_c);
-		exit();
+		}
+
+		var_dump($file);
+		closedir($dir_c);
+
+		return $file;
 	}
+
+
+ function insertModule($consulta)
+ {
+ 		$this-> conectar();
+		$resp = $this->consultar($consulta);
+		$this-> cerrarConexion();
+		return  $resp;
+
+ }
 
 
 

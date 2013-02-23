@@ -121,6 +121,7 @@ if ($_SESSION['isLogin'])
     $smarty->assign('company_name',$entity[0]->company_name);
     $smarty->assign('email',$entity[0]->email);
     $smarty->assign('phone',$entity[0]->phone);
+    $_SESSION["id_entity"] = $entity[0]->id_entity;
     unset($_SESSION["addModuleOption"]);
     unset($_SESSION["entity"]);
     unset($_SESSION["msgIdClient"]);

@@ -9,6 +9,7 @@ global $smarty;
 
 //$obj = new gestor();
 //echo $_GET["op"];
+$gestor	 = new gestor();
 
 if ($_GET["op"] == "l") 
 {
@@ -18,7 +19,7 @@ if ($_GET["op"] == "l")
 	//echo "Opcion l";
 	//$smarty->display("addModule.tpl");
 	//$smarty->assign('cliente',"l");
-	$gestor	 = new gestor();
+	
 	if ($_POST["textBuscar"]!= "")
 	{
 		$entity=$gestor->buscarCliente($_POST["textBuscar"]);
@@ -45,11 +46,12 @@ if ($_GET["op"] == "l")
 	//array_search("34", $modules);
 	//exit();
 	//var_dump(file_exists("../templates/addModule.tpl"));
-	var_dump(unlink("../templates/addModule2.tpl"));
-	//$gestor->deleteCaching();
+	
+	unlink("../templates/addModule2.tpl");
+	unlink("../templates_c/".$gestor->deleteCaching());
 	reLoadPage($modules);
 	//echo $modules[0]->idmodule;
-	exit();
+	//exit();
 	header("Location: ../index.php?menu=addModule");
 
 	//}
@@ -78,9 +80,16 @@ else if($_GET["op"] == "s")
 	//exit();
 */
 }
-else
+else if($_GET["op"] == "g")
 {
-
+	//var_dump($_POST);
+	//var_dump($_SESSION);
+	//echo getcwd();
+	$consulta= insetModule();
+	$gestor->insertModule($consulta);
+	header("Location: ../index.php?menu=addModule");
+	//var_dump($resp);
+	//exit();
 }
 
 
@@ -125,6 +134,35 @@ function reLoadPage($module)
 
 	$dom->saveHTMLFile("../templates/addModule2.tpl");
 
+}
+function insetModule()
+{
+	//var_dump($_SESSION);
+	$module = array();
+	if ($_POST["checkbox"])
+	{
+		//echo "if";
+		$module = $_POST["checkbox"];
+		$query = "insert into `clientmodules`
+		(`idCliente`,
+			`idmodule`) values";
+for ($i=0; $i < count($module); $i++) 
+{ 
+	if ($i > 0)
+	{
+		$query .=",";
+
+	}
+
+	$query .="('".$_SESSION["id_entity"]."',"."'".$module[$i]."')";
+			//echo $module[$i];
+}
+		//echo $query;
+		//var_dump($_POST["checkbox"]);
+}
+
+return $query;
+	//exit();
 }
 
 

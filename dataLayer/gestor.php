@@ -226,6 +226,65 @@ class gestor
 		//exit();
 
 	}
+	function buscarClienteModulos($client)
+	{
+		$consulta = "select * from clientmodules where idCliente='".$client."'";
+		//var_dump($consulta);
+		//exit();
+		$this-> conectar();
+		$entity = $this->consultar($consulta);
+		$this-> cerrarConexion();
+		return $entity;
+	}
+
+	function deleteCaching()
+	{
+
+		//definimos el directoriode los archivos	
+		$pathTempalte = "../templates/";
+		$dir = opendir($pathTempalte);
+		while ($elemento = readdir($dir))
+		{ 
+			//echo $elemento." tamano de letras".strlen($elemento)."</br>";
+			//echo $pathTempalte.$elemento_c;
+			//echo substr($elemento_c, 0,14);
+			if (substr($elemento, -14,14) =="addModule2.tpl")
+			{
+				$aBorrar = $pathTempalte.$elemento_c;
+
+				//echo $elemento." tamano de letras".strlen($elemento)."</br>";
+				
+
+			}
+			closedir($dir);
+			var_dump(unlink($aBorrar));
+
+		}
+		
+			//cache
+		//echo "cache";
+		/*$pathTempalte_c = "../templates_c/";
+		//echo $pathTempalte_C ;
+		$dir_c = opendir($pathTempalte_c);
+		//var_dump($dir_c);
+		while ($elemento_c = readdir($dir_c))
+		{ 
+			//echo $elemento_c." tamano de letras".strlen($elemento_c)."</br>";
+			//echo substr($elemento_c, -18,18)."</br>" ;
+			if (substr($elemento_c, -18,18) =="addModule2.tpl.php" )
+			{	
+				//echo $elemento_c;
+				//echo substr($elemento_c, -14,14) ;
+				//echo $elemento_c." tamano de letras".strlen($elemento_c)."</br>";	
+				var_dump(unlink($elemento_c));
+			}	
+		}*/
+		//closedir($dir_c);
+		exit();
+	}
+
+
+
 
 }
 

@@ -247,7 +247,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 3280,
+				"buffer_size": 4227,
 				"line_ending": "Windows"
 			}
 		},
@@ -255,7 +255,7 @@
 			"file": "businessLayer/message.php",
 			"settings":
 			{
-				"buffer_size": 420,
+				"buffer_size": 741,
 				"line_ending": "Windows"
 			}
 		},
@@ -263,7 +263,7 @@
 			"file": "templates/addModule.tpl",
 			"settings":
 			{
-				"buffer_size": 10608,
+				"buffer_size": 10653,
 				"line_ending": "Windows"
 			}
 		},
@@ -271,7 +271,7 @@
 			"file": "businessLayer/addModule.php",
 			"settings":
 			{
-				"buffer_size": 291,
+				"buffer_size": 2220,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,7 +295,7 @@
 			"file": "dataLayer/gestor.php",
 			"settings":
 			{
-				"buffer_size": 3444,
+				"buffer_size": 5921,
 				"line_ending": "Windows"
 			}
 		}
@@ -742,15 +742,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 3280,
+						"buffer_size": 4227,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2344,
-								2344
+								0,
+								0
 							]
 						],
 						"settings":
@@ -770,15 +770,15 @@
 					"file": "businessLayer/message.php",
 					"settings":
 					{
-						"buffer_size": 420,
+						"buffer_size": 741,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								0,
+								0
 							]
 						],
 						"settings":
@@ -797,7 +797,7 @@
 					"file": "templates/addModule.tpl",
 					"settings":
 					{
-						"buffer_size": 10608,
+						"buffer_size": 10653,
 						"regions":
 						{
 						},
@@ -825,15 +825,15 @@
 					"file": "businessLayer/addModule.php",
 					"settings":
 					{
-						"buffer_size": 291,
+						"buffer_size": 2220,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								176,
-								176
+								0,
+								0
 							]
 						],
 						"settings":
@@ -907,15 +907,15 @@
 					"file": "dataLayer/gestor.php",
 					"settings":
 					{
-						"buffer_size": 3444,
+						"buffer_size": 5921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								158
+								0,
+								0
 							]
 						],
 						"settings":

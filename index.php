@@ -16,7 +16,7 @@ class index
    global $smarty;
 
    $smarty->display($TemplateAuxiliar);
-                  
+
  }
 
  public function menu()
@@ -44,6 +44,7 @@ class index
 echo "<noscript> No tienes JS</noscript>";
 $call = new index();
 global $smarty;
+//$smarty->clear_all_cache();
     //echo $_GET['menu'];
     //var_dump($_POST);
 
@@ -93,86 +94,87 @@ if ($_SESSION['isLogin'])
 
   $smarty->assign('titleMenu','Modify Client');
   $call->display('modifyCliente.tpl');
-   break;
+  break;
 
   case 'addModule':
-      $smarty->assign('titleMenu','Add Module');
+  $smarty->assign('titleMenu','Add Module');
 
-          if ($_GET["op"] =="r") 
-          {
-            $_SESSION["msgIdClient"] = "r";
-          }
+  if ($_GET["op"] =="r") 
+  {
+    $_SESSION["msgIdClient"] = "r";
+  }
 
-          if (!is_null($_SESSION["msgIdClient"]) &&  $_SESSION["msgIdClient"] != "r")
-          {
+  if (!is_null($_SESSION["msgIdClient"]) &&  $_SESSION["msgIdClient"] != "r")
+  {
                 //echo "Load";
-            $smarty->assign('addModuleOption','l');
-            $smarty->assign('entity','');
-            unset($_SESSION["msgIdClient"]);
-            $call->display('addModule.tpl');
+    $smarty->assign('addModuleOption','l');
+    $smarty->assign('entity','');
+    unset($_SESSION["msgIdClient"]);
+    $call->display('addModule.tpl');
 
-          }
-          else if (!is_null($_SESSION["msgIdClient"]) &&  $_SESSION["msgIdClient"] == "r") 
-          {
-            $entity = array();
-            $entity  = $_SESSION["entity"];
-            $smarty->assign('addModuleOption','r');
-            $smarty->assign('company_name',$entity[0]->company_name);
-            $smarty->assign('email',$entity[0]->email);
-            $smarty->assign('phone',$entity[0]->phone);
-            unset($_SESSION["addModuleOption"]);
-            unset($_SESSION["entity"]);
-            unset($_SESSION["msgIdClient"]);
-            $call->display('addModule2.tpl');
-          } 
-          else
-          {
+  }
+  else if (!is_null($_SESSION["msgIdClient"]) &&  $_SESSION["msgIdClient"] == "r") 
+  {
+    $entity = array();
+    $entity  = $_SESSION["entity"];
+    $smarty->assign('addModuleOption','r');
+    $smarty->assign('company_name',$entity[0]->company_name);
+    $smarty->assign('email',$entity[0]->email);
+    $smarty->assign('phone',$entity[0]->phone);
+    unset($_SESSION["addModuleOption"]);
+    unset($_SESSION["entity"]);
+    unset($_SESSION["msgIdClient"]);
+    //$smarty->clear_cache('addModule2.tpl');//, 'CACHEID');
+    $call->display('addModule2.tpl');
+  } 
+  else
+  {
               //echo "Else";
               //var_dump($_SESSION);
-            $smarty->assign('addModuleOption','s');
-            unset($_SESSION["msgIdClient"]);
-            $call->display('addModule.tpl');
+    $smarty->assign('addModuleOption','s');
+    unset($_SESSION["msgIdClient"]);
+    $call->display('addModule.tpl');
 
-          }
-       
-          break;
+  }
 
-   case 'message':
+  break;
+
+  case 'message':
           //echo "entro en el case de index para message";
           //var_dump($_SESSION);
           //exit();
-          $smarty->assign('titleMenu','message');
-          $smarty->assign('msg',$_SESSION["msg"]);
-          $smarty->assign('page',$_SESSION["msgPage"]);
-          $smarty->assign('msgEntity',$_SESSION["msgEntity"]);
-          $smarty->assign('msgType',$_SESSION["msgType"]);
-          $smarty->assign('msgIdClient',$_SESSION["msgIdClient"]);
+  $smarty->assign('titleMenu','message');
+  $smarty->assign('msg',$_SESSION["msg"]);
+  $smarty->assign('page',$_SESSION["msgPage"]);
+  $smarty->assign('msgEntity',$_SESSION["msgEntity"]);
+  $smarty->assign('msgType',$_SESSION["msgType"]);
+  $smarty->assign('msgIdClient',$_SESSION["msgIdClient"]);
 
-          $call->display('message.tpl');
+  $call->display('message.tpl');
   break;
 
   default:
-          $smarty->assign('titleMenu','New Client');
-          $call->display('formCliente.tpl');
+  $smarty->assign('titleMenu','New Client');
+  $call->display('formCliente.tpl');
                      //echo "defaul";
-   break;
-        }
+  break;
+}
 
 
 
-      }
+}
 
-      else
+else
 
-      {
-        $smarty->assign("messagelogin", sprintf("%s",$_SESSION["msgLogin"]));
-        $call->display('login.tpl');
-
-
-      }
+{
+  $smarty->assign("messagelogin", sprintf("%s",$_SESSION["msgLogin"]));
+  $call->display('login.tpl');
 
 
+}
 
 
 
-      ?>
+
+
+?>

@@ -1,31 +1,39 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-02-21 15:57:24
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-23 09:58:52
          compiled from "templates\addModule2.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:310745126816d8a61d1-31029135%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:232785127de8162dc46-46595164%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4ec25ca82e19396c8cf033965a9b849542d598be' => 
     array (
       0 => 'templates\\addModule2.tpl',
-      1 => 1361480244,
+      1 => 1361631532,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '310745126816d8a61d1-31029135',
+  'nocache_hash' => '232785127de8162dc46-46595164',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5126816d8d6116_07626859',
+  'unifunc' => 'content_5127de8167f1a6_93975804',
   'variables' => 
   array (
+    'addModuleOption' => 0,
+    'company_name' => 0,
+    'email' => 0,
+    'phone' => 0,
     'libraries' => 0,
     'menu' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5126816d8d6116_07626859')) {function content_5126816d8d6116_07626859($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title></head><body><p>
+<?php if ($_valid && !is_callable('content_5127de8167f1a6_93975804')) {function content_5127de8167f1a6_93975804($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title></head><body onload="load('<?php echo $_smarty_tpl->tpl_vars['addModuleOption']->value;?>
+','<?php echo $_smarty_tpl->tpl_vars['company_name']->value;?>
+','<?php echo $_smarty_tpl->tpl_vars['email']->value;?>
+','<?php echo $_smarty_tpl->tpl_vars['phone']->value;?>
+');"><p>
   <?php echo $_smarty_tpl->tpl_vars['libraries']->value;?>
 
 
@@ -223,7 +231,7 @@ body{
 
     <div class="grid_4">
      <div>
-      <table><tr><td> <input type="checkbox" checked>English   <br></td> </tr><tr><td> <input type="checkbox" checked>French   <br></td> </tr><tr><td> <input type="checkbox" checked>German   <br></td> </tr><tr><td> <input type="checkbox" checked>Spanish   <br></td> </tr><tr><td> <input type="checkbox" checked>Japanese   <br></td> </tr><tr><td> <input type="checkbox" checked>Turkish   <br></td> </tr><tr><td> <input type="checkbox" checked>Russian   <br></td> </tr><tr><td> <input type="checkbox" checked>Swedish   <br></td> </tr><tr><td> <input type="checkbox" checked>Portuguese   <br></td> </tr><tr><td> <input type="checkbox" checked>SerboCroatian   <br></td> </tr><tr><td> <input type="checkbox" checked>Nederlands   <br></td> </tr><tr><td> <input type="checkbox" checked>Czech   <br></td> </tr><tr><td> <input type="checkbox" checked>Italiano   <br></td> </tr><tr><td> <input type="checkbox" checked>Chinese   <br></td> </tr><tr><td> <input type="checkbox" checked>Greek   <br></td> </tr><tr><td> <input type="checkbox" checked>Korean   <br><br></td> </tr></table></div>
+      <table><tr><td> <input type="checkbox">English   <br></td> </tr><tr><td> <input type="checkbox">French   <br></td> </tr><tr><td> <input type="checkbox">German   <br></td> </tr><tr><td> <input type="checkbox">Spanish   <br></td> </tr><tr><td> <input type="checkbox">Japanese   <br></td> </tr><tr><td> <input type="checkbox">Turkish   <br></td> </tr><tr><td> <input type="checkbox">Russian   <br></td> </tr><tr><td> <input type="checkbox">Swedish   <br></td> </tr><tr><td> <input type="checkbox">Portuguese   <br></td> </tr><tr><td> <input type="checkbox">SerboCroatian   <br></td> </tr><tr><td> <input type="checkbox">Nederlands   <br></td> </tr><tr><td> <input type="checkbox">Czech   <br></td> </tr><tr><td> <input type="checkbox">Italiano   <br></td> </tr><tr><td> <input type="checkbox">Chinese   <br></td> </tr><tr><td> <input type="checkbox">Greek   <br></td> </tr><tr><td> <input type="checkbox">Korean   <br><br></td> </tr></table></div>
   </div>
   <div class="grid_4">
     <table><tr><div id="radio">
@@ -237,34 +245,34 @@ body{
   <div id="accordion" class="grid_4">
     <h3>NexorONE&Acirc;&reg; Core Package</h3>
     <div>
-      <table><tr><td><input id="1" type="checkbox" name="checkbox" value="1" checked> Multiple Administrators <br></td> </tr><tr><td><input id="2" type="checkbox" name="checkbox" value="2" checked> Profile Groups <br></td> </tr><tr><td><input id="3" type="checkbox" name="checkbox" value="3" checked> Calendar <br></td> </tr><tr><td><input id="4" type="checkbox" name="checkbox" value="4" checked> Help System <br></td> </tr><tr><td><input id="35" type="checkbox" name="checkbox" value="35" checked> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr></table></div>
+      <table><tr><td><input id="1" type="checkbox" name="checkbox" value="1" checked> Multiple Administrators <br></td> </tr><tr><td><input id="2" type="checkbox" name="checkbox" value="2"> Profile Groups <br></td> </tr><tr><td><input id="3" type="checkbox" name="checkbox" value="3"> Calendar <br></td> </tr><tr><td><input id="4" type="checkbox" name="checkbox" value="4"> Help System <br></td> </tr><tr><td><input id="35" type="checkbox" name="checkbox" value="35"> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr></table></div>
 
 
     <h3>Operations Enhancement Modules</h3>
     <div>
-     <table><tr><td><input id="5" type="checkbox" name="checkbox" value="5" checked> Interest &amp; Term Deposits Module <br></td> </tr><tr><td><input id="6" type="checkbox" name="checkbox" value="6" checked> Certificate of Deposits Generator (PDF) <br></td> </tr><tr><td><input id="7" type="checkbox" name="checkbox" value="7" checked> Minimum Balance Module <br></td> </tr><tr><td><input id="8" type="checkbox" name="checkbox" value="8" checked> Monthly Fee Module <br></td> </tr><tr><td><input id="9" type="checkbox" name="checkbox" value="9" checked> Line of Credit Module <br></td> </tr><tr><td><input id="10" type="checkbox" name="checkbox" value="10" checked> Recurring Transfers Between Users <br></td> </tr><tr><td><input id="11" type="checkbox" name="checkbox" value="11" checked> Loan Module <br></td> </tr></table></div>
+     <table><tr><td><input id="5" type="checkbox" name="checkbox" value="5"> Interest &amp; Term Deposits Module <br></td> </tr><tr><td><input id="6" type="checkbox" name="checkbox" value="6"> Certificate of Deposits Generator (PDF) <br></td> </tr><tr><td><input id="7" type="checkbox" name="checkbox" value="7"> Minimum Balance Module <br></td> </tr><tr><td><input id="8" type="checkbox" name="checkbox" value="8"> Monthly Fee Module <br></td> </tr><tr><td><input id="9" type="checkbox" name="checkbox" value="9"> Line of Credit Module <br></td> </tr><tr><td><input id="10" type="checkbox" name="checkbox" value="10"> Recurring Transfers Between Users <br></td> </tr><tr><td><input id="11" type="checkbox" name="checkbox" value="11"> Loan Module <br></td> </tr></table></div>
 
   <h3>Compliance Protocol Enhancement Modules</h3>
   <div>
-    <table><tr><td><input id="12" type="checkbox" name="checkbox" value="12" checked> Terms &amp; Conditions Module <br></td> </tr><tr><td><input id="13" type="checkbox" name="checkbox" value="13" checked> File Upload Interface Module - Profile Documents <br></td> </tr><tr><td><input id="14" type="checkbox" name="checkbox" value="14" checked> File Upload Interface Module - Proof of Funds <br></td> </tr></table></div>
+    <table><tr><td><input id="12" type="checkbox" name="checkbox" value="12"> Terms &amp; Conditions Module <br></td> </tr><tr><td><input id="13" type="checkbox" name="checkbox" value="13"> File Upload Interface Module - Profile Documents <br></td> </tr><tr><td><input id="14" type="checkbox" name="checkbox" value="14"> File Upload Interface Module - Proof of Funds <br></td> </tr></table></div>
 
   <h3>Large Scale Operations Enhancement Modules</h3>
   <div>
-    <table><tr><td><input id="15" type="checkbox" name="checkbox" value="15" checked> News Page Module <br></td> </tr><tr><td><input id="16" type="checkbox" name="checkbox" value="16" checked> Editable Transactions Module <br></td> </tr><tr><td><input id="17" type="checkbox" name="checkbox" value="17" checked> Import Transactions Module <br></td> </tr><tr><td><input id="18" type="checkbox" name="checkbox" value="18" checked> Automated Username/Password Reset Module <br></td> </tr><tr><td><input id="19" type="checkbox" name="checkbox" value="19" checked> Customer Service Control Module <br></td> </tr><tr><td><input id="20" type="checkbox" name="checkbox" value="20" checked> Requests Matrix Module <br></td> </tr></table></div>
+    <table><tr><td><input id="15" type="checkbox" name="checkbox" value="15"> News Page Module <br></td> </tr><tr><td><input id="16" type="checkbox" name="checkbox" value="16"> Editable Transactions Module <br></td> </tr><tr><td><input id="17" type="checkbox" name="checkbox" value="17"> Import Transactions Module <br></td> </tr><tr><td><input id="18" type="checkbox" name="checkbox" value="18"> Automated Username/Password Reset Module <br></td> </tr><tr><td><input id="19" type="checkbox" name="checkbox" value="19"> Customer Service Control Module <br></td> </tr><tr><td><input id="20" type="checkbox" name="checkbox" value="20"> Requests Matrix Module <br></td> </tr></table></div>
 
 
   <h3>Business Expansion Modules</h3>
   <div>
-    <table><tr><td><input id="21" type="checkbox" name="checkbox" value="21" checked> Debit Card Funding Module (Passive) <br></td> </tr><tr><td><input id="22" type="checkbox" name="checkbox" value="22" checked> Portfolio and Commodities Module (Passive) <br></td> </tr><tr><td><input id="23" type="checkbox" name="checkbox" value="23" checked> FX Module (Transfers between Accounts of Different Currencies) <br></td> </tr><tr><td><input id="24" type="checkbox" name="checkbox" value="24" checked> Commissions Module <br></td> </tr><tr><td><input id="25" type="checkbox" name="checkbox" value="25" checked> OFAC Compliance Module <br></td> </tr></table></div>
+    <table><tr><td><input id="21" type="checkbox" name="checkbox" value="21"> Debit Card Funding Module (Passive) <br></td> </tr><tr><td><input id="22" type="checkbox" name="checkbox" value="22"> Portfolio and Commodities Module (Passive) <br></td> </tr><tr><td><input id="23" type="checkbox" name="checkbox" value="23"> FX Module (Transfers between Accounts of Different Currencies) <br></td> </tr><tr><td><input id="24" type="checkbox" name="checkbox" value="24"> Commissions Module <br></td> </tr><tr><td><input id="25" type="checkbox" name="checkbox" value="25"> OFAC Compliance Module <br></td> </tr></table></div>
 
   <h3>External Service Provider Integrations</h3>
   <div>
-    <table><tr><td><input id="26" type="checkbox" name="checkbox" value="26" checked> Earthport Integration Module <br></td> </tr><tr><td><input id="27" type="checkbox" name="checkbox" value="27" checked> Earthport V6 Integration Module <br></td> </tr><tr><td><input id="28" type="checkbox" name="checkbox" value="28" checked> Earthport Direct Integration Module <br></td> </tr><tr><td><input id="29" type="checkbox" name="checkbox" value="29" checked> Prepaid Financial Services Integration Module <br></td> </tr><tr><td><input id="30" type="checkbox" name="checkbox" value="30" checked> CCS Prepay Integration Module <br></td> </tr><tr><td><input id="31" type="checkbox" name="checkbox" value="31" checked> Banclear Integration Module <br></td> </tr><tr><td><input id="32" type="checkbox" name="checkbox" value="32" checked> eGateway Integration Module <br></td> </tr></table></div>
+    <table><tr><td><input id="26" type="checkbox" name="checkbox" value="26"> Earthport Integration Module <br></td> </tr><tr><td><input id="27" type="checkbox" name="checkbox" value="27"> Earthport V6 Integration Module <br></td> </tr><tr><td><input id="28" type="checkbox" name="checkbox" value="28"> Earthport Direct Integration Module <br></td> </tr><tr><td><input id="29" type="checkbox" name="checkbox" value="29"> Prepaid Financial Services Integration Module <br></td> </tr><tr><td><input id="30" type="checkbox" name="checkbox" value="30"> CCS Prepay Integration Module <br></td> </tr><tr><td><input id="31" type="checkbox" name="checkbox" value="31"> Banclear Integration Module <br></td> </tr><tr><td><input id="32" type="checkbox" name="checkbox" value="32"> eGateway Integration Module <br></td> </tr></table></div>
 
 
   <h3>Other Modules</h3>
   <div>
-    <table><tr><td><input id="33" type="checkbox" name="checkbox" value="33" checked> Currency Conversion Tool <br></td> </tr><tr><td><input id="34" type="checkbox" name="checkbox" value="34" checked> Pro Tooltips <br></td> </tr></table></div>
+    <table><tr><td><input id="33" type="checkbox" name="checkbox" value="33"> Currency Conversion Tool <br></td> </tr><tr><td><input id="34" type="checkbox" name="checkbox" value="34"> Pro Tooltips <br></td> </tr></table></div>
 </div>   
 <center>
   <button class="push_6">save</button>

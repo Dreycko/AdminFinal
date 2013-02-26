@@ -51,6 +51,7 @@ function Clear(){
 function crearCampos(){
 	
 
+
 	//Obtengo el Div con el ID Directores para luego ser modificado
 	var divDirectors = document.getElementById("divDirectors");	
 	//obtengo todos los elemento tipo texto y label para luego asignarle un nuevo ID al nuevo elemento 
@@ -91,7 +92,15 @@ function crearCampos(){
 	var divDirect = document.createElement("div");
 	var btnDelete = document.createElement("button");
 	var br = document.createElement("br");
-
+	// tabla
+	var tabla = document.createElement("table");
+	var lineaDirectr = document.createElement("tr");
+	var lineaLegal = document.createElement("tr");
+	var celdaDirectrLable = document.createElement("td");
+	var celdaDirectrText = document.createElement("td")
+	var celdaLegalLable = document.createElement("td")
+	var celdaLegalText = document.createElement("td")
+	
 
 	//Le asigno las propiedades de Id y name al elemento Texto y Label
 	btnDelete.name = "btnDelete"
@@ -140,12 +149,36 @@ function crearCampos(){
 
 
 	//enlazo el elemento texto al Div del html
+	var tabla = document.createElement("table");
+	var lineaDirectr = document.createElement("tr");
+	var lineaLegal = document.createElement("tr");
+	var celdaDirectrLable = document.createElement("td");
+	var celdaDirectrText = document.createElement("td")
+	var celdaLegalLable = document.createElement("td")
+	var celdaLegalText = document.createElement("td")
+	var tbody = document.createElement("tbody");
+
 	//divDirect.appendChild(br);
+	celdaDirectrLable.appendChild(labeldirectr);
+	lineaDirectr.appendChild(celdaDirectrLable);
+	celdaDirectrText.appendChild(txtdirectr);
+	lineaDirectr.appendChild(celdaDirectrText);
+
+	celdaLegalLable.appendChild(labellegal);
+	lineaLegal.appendChild(celdaLegalLable);
+	celdaLegalText.appendChild(txtlegal);
+	lineaLegal.appendChild(celdaLegalText);
+
+	tbody.appendChild(lineaDirectr);
+	tbody.appendChild(lineaLegal);
+	tabla.appendChild(tbody);
+	divDirect.appendChild(tabla);
+/*
 	divDirect.appendChild(labeldirectr);
 	divDirect.appendChild(txtdirectr);
 	divDirect.appendChild(br);
 	divDirect.appendChild(labellegal);
-	divDirect.appendChild(txtlegal);
+	divDirect.appendChild(txtlegal);*/
 	divDirect.appendChild(btnDelete);
 	divDirect.appendChild(br);
 	divDirectors.appendChild(divDirect);
@@ -336,21 +369,65 @@ function crearCamposContact(){
 
 			divContact.id = "divContact"+(totTxtPositionContact.length+1);
 			btnDeleteContact.id = "btnDeleteContact"+(totTxtPositionContact.length+1);
+			//se crea la tabla
+
+			var tabla = document.createElement("table");
+			var filaname = document.createElement("tr");
+			var filaposition = document.createElement("tr");
+			var filaphone = document.createElement("tr");
+			var filaemail = document.createElement("tr");
+			var celdaLableName = document.createElement("td");
+			var celdaTextName = document.createElement("td");
+			var celdaLabelPosition = document.createElement("td");
+			var celdaTextPosition = document.createElement("td");
+			var celdaLabelPhone = document.createElement("td");
+			var celdaTextPhone = document.createElement("td");
+			var celdaLableEmail = document.createElement("td");
+			var celdaTextEmail = document.createElement("td");
+			var tbody = document.createElement("tbody");
+
 
 
 			//enlazo el elemento texto al Div del html
 			//divContact.appendChild(br);
-			divContact.appendChild(labelNameContact);
+			celdaLableName.appendChild(labelNameContact);
+			celdaTextName.appendChild(txtNameContact);
+			filaname.appendChild(celdaLableName);
+			filaname.appendChild(celdaTextName);
+			tbody.appendChild(filaname);
+
+			celdaLabelPosition.appendChild(labelPositionContact);
+			celdaTextPosition.appendChild(txtPositionContact);
+			filaposition.appendChild(celdaLabelPosition);
+			filaposition.appendChild(celdaTextPosition);
+			tbody.appendChild(filaposition);
+
+			celdaLabelPhone.appendChild(labelPhoneContact);
+			celdaTextPhone.appendChild(txtPhoneContact);
+			filaphone.appendChild(celdaLabelPhone);
+			filaphone.appendChild(celdaTextPhone);
+			tbody.appendChild(filaphone);
+
+			celdaLableEmail.appendChild(labelEmailContact);
+			celdaTextEmail.appendChild(txtEmailContact);
+			filaemail.appendChild(celdaLableEmail);
+			filaemail.appendChild(celdaTextEmail);
+			tbody.appendChild(filaemail);
+
+
+
+			/*divContact.appendChild(labelNameContact);
 			divContact.appendChild(txtNameContact);
 			divContact.appendChild(labelPositionContact);
 			divContact.appendChild(txtPositionContact);
 			divContact.appendChild(labelPhoneContact);
 			divContact.appendChild(txtPhoneContact);
 			divContact.appendChild(labelEmailContact);
-			divContact.appendChild(txtEmailContact);
-
+			divContact.appendChild(txtEmailContact);*/
+			tabla.appendChild(tbody);
+			divContact.appendChild(tabla);
 			divContact.appendChild(btnDeleteContact);
-			divContact.appendChild(br);
+			//divContact.appendChild(br);
 			divContacts.appendChild(divContact);
 
 		}

@@ -85,6 +85,16 @@ if ($_SESSION['isLogin'])
  switch ($_GET['menu'])
  {
 
+  case 'clientList':
+  unset($_SESSION["msgEntity"]);
+  $call->display('clientList.tpl');
+  break;
+case 'newClientSales':
+  unset($_SESSION["msgEntity"]);
+  $call->display('newClientSales.tpl');
+  break;
+
+
   case 'newClient':
   unset($_SESSION["msgEntity"]);
   $call->display('formCliente.tpl');

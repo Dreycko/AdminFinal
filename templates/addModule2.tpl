@@ -209,7 +209,7 @@ body{
   <div id="accordion" class="grid_4">
     <h3>NexorONE&Acirc;&reg; Core Package</h3>
     <div>
-      <table><tr><td><input id="1" type="checkbox" name="checkbox[]" value="1"> Multiple Administrators <br></td> </tr><tr><td><input id="2" type="checkbox" name="checkbox[]" value="2"> Profile Groups <br></td> </tr><tr><td><input id="3" type="checkbox" name="checkbox[]" value="3" checked> Calendar <br></td> </tr><tr><td><input id="4" type="checkbox" name="checkbox[]" value="4"> Help System <br></td> </tr><tr><td><input id="35" type="checkbox" name="checkbox[]" value="35" checked> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr></table></div>
+      <table><tr><td><input id="1" type="checkbox" name="checkbox[]" value="1"> Multiple Administrators <br></td> </tr><tr><td><input id="2" type="checkbox" name="checkbox[]" value="2"> Profile Groups <br></td> </tr><tr><td><input id="3" type="checkbox" name="checkbox[]" value="3"> Calendar <br></td> </tr><tr><td><input id="4" type="checkbox" name="checkbox[]" value="4"> Help System <br></td> </tr><tr><td><input id="35" type="checkbox" name="checkbox[]" value="35"> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr></table></div>
 
 
     <h3>Operations Enhancement Modules</h3>

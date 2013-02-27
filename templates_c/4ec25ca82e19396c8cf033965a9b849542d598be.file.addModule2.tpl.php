@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-02-23 11:55:08
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-26 17:46:56
          compiled from "templates\addModule2.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:240715128f46c81e300-58601936%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:11101512d3b608eeb37-88250357%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '4ec25ca82e19396c8cf033965a9b849542d598be' => 
     array (
       0 => 'templates\\addModule2.tpl',
-      1 => 1361638508,
+      1 => 1361918816,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '240715128f46c81e300-58601936',
+  'nocache_hash' => '11101512d3b608eeb37-88250357',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5128f46c873c91_40080052',
+  'unifunc' => 'content_512d3b609218f6_98012781',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5128f46c873c91_40080052')) {function content_5128f46c873c91_40080052($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?php if ($_valid && !is_callable('content_512d3b609218f6_98012781')) {function content_512d3b609218f6_98012781($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title></head><body onload="load('<?php echo $_smarty_tpl->tpl_vars['addModuleOption']->value;?>
 ','<?php echo $_smarty_tpl->tpl_vars['company_name']->value;?>
 ','<?php echo $_smarty_tpl->tpl_vars['email']->value;?>
@@ -245,7 +245,7 @@ body{
   <div id="accordion" class="grid_4">
     <h3>NexorONE&Acirc;&reg; Core Package</h3>
     <div>
-      <table><tr><td><input id="1" type="checkbox" name="checkbox[]" value="1"> Multiple Administrators <br></td> </tr><tr><td><input id="2" type="checkbox" name="checkbox[]" value="2"> Profile Groups <br></td> </tr><tr><td><input id="3" type="checkbox" name="checkbox[]" value="3" checked> Calendar <br></td> </tr><tr><td><input id="4" type="checkbox" name="checkbox[]" value="4"> Help System <br></td> </tr><tr><td><input id="35" type="checkbox" name="checkbox[]" value="35" checked> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr></table></div>
+      <table><tr><td><input id="1" type="checkbox" name="checkbox[]" value="1"> Multiple Administrators <br></td> </tr><tr><td><input id="2" type="checkbox" name="checkbox[]" value="2"> Profile Groups <br></td> </tr><tr><td><input id="3" type="checkbox" name="checkbox[]" value="3"> Calendar <br></td> </tr><tr><td><input id="4" type="checkbox" name="checkbox[]" value="4"> Help System <br></td> </tr><tr><td><input id="35" type="checkbox" name="checkbox[]" value="35"> Multi Currency Wires (Incoming and Outgoing Wire Transfers) <br></td> </tr></table></div>
 
 
     <h3>Operations Enhancement Modules</h3>

@@ -5,9 +5,10 @@
     <link rel="stylesheet" type="text/css" href="varios/css/960/grid.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="varios/css/960/layout.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="varios/css/960/nav.css" media="screen" />
+    <script src='varios/script/newClientSales.js'></script>
 
 </head>
-<body>
+<body onload="load();">
     <form action="businessLayer/newClientSales.php" method= "post">
         <div class = "container_12">
             {$libraries}
@@ -24,20 +25,25 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td><label>DOP:</label></td>
-                                        <td><input type="text" name="dop"></td>
+                                        <td><label>DOP:</label>
+                                        </td>
+                                        <td>
+                                            {* start and end year can be relative to current year *}
+                                            {html_select_date prefix='StartDate' time=$time start_year='-50' end_year='+1' display_days=true}
+                                        </td>
+                                        
                                     </tr>
                                     <tr>
                                         <td><label>CODE:</label></td>
-                                        <td><input type="text" name="code"></td>
+                                        <td><input type="text" disabled name="code"></td>
                                     </tr>
                                     <tr>
                                         <td><label>Company Name:</label></td>
-                                        <td><input type="text" name="company_name"></td>
+                                        <td><input type="text" disabled name="company_name"></td>
                                     </tr>
                                     <tr>
                                         <td><label>Contact:</label></td>
-                                        <td><input type="text" name="contact_sale"></td>
+                                        <td><input type="text" disabled name="contact_sale"></td>
                                     </tr>
                                     <tr>
                                         <td><label>Package:</label></td>
@@ -50,11 +56,11 @@
                                   </tr>
                                   <tr>
                                     <td><label>Hosting:</label></td>
-                                    <td><input type="text" name="hosting"></td>
+                                    <td><input type="text" disabled name="hosting"></td>
                                 </tr>
                                 <tr>
                                     <td><label>Domain:</label></td>
-                                    <td><input type="text" name="domain"></td>
+                                    <td><input type="text" disabled name="domain"></td>
                                 </tr>
 
                             </tbody>
@@ -62,7 +68,7 @@
                                 <tr>
                                     <td colspan="2">
                                         <center>
-                                            <input type="submit" name="btnSales" value="Save">
+                                            <input type="submit" disabled name="btnSales" value="Save">
                                         </center>
                                     </td>
                                 </tr>
@@ -79,9 +85,9 @@
                 <h2>
                     <a href="#" id="toggle-forms">know your client</a>
                 </h2>
-                <div class="block" id="forms">
+                <div class="block" id="formsKyc">
                     <fieldset >
-                        <legend>User Information</legend>
+                        <legend  id="legendKyc" onclick="habilitar('Kyc');">Click to modify User information</legend>
                         <form action="businessLayer/fromcliente.php" id="agregar" method="post" onsubmit="return validarCampos(agregar);">
                             <div id="accordion">
                                 <div>
@@ -89,21 +95,13 @@
 
                                         <tr> 
                                             <td >Company name*:</td>
-                                            <td><input type="text" name="required" id="company_name"/></td>
+                                            <td><input type="text" disabled name="required" id="company_name"/></td>
                                         </tr>
                                         <tr> 
                                             <td >Abbreviation name*:</td>
-                                            <td><input type="text" name="required" id="abbreviation_name"/></td>
+                                            <td><input type="text" disabled name="required" id="abbreviation_name"/></td>
                                         </tr>
-                                        <tr> 
-                                            <td>Incorporation date*: 
-                                            </td>
 
-                                            <td>
-                                                {* start and end year can be relative to current year *}
-                                                {html_select_date prefix='StartDate' time=$time start_year='-50' end_year='+1' display_days=true}
-                                            </td>
-                                        </tr>
                                         <tr> 
 
                                             <td>Jurisdiction*:</td>
@@ -120,23 +118,23 @@
                                         </tr>
                                         <tr> 
                                             <td>Type of Business or Activity:</td>
-                                            <td><input type="text" name="type_business" id="type_business" class="field_text"     /></td>
+                                            <td><input type="text" disabled name="type_business" id="type_business" class="field_text"     /></td>
                                         </tr>
                                         <tr> 
                                             <td valign="top">Company address:</td>
-                                            <td><textarea name="company_address" id="company_address" style="width: 200px; height: 100px"></textarea></td>
+                                            <td><textarea name="company_address" id="company_address" disabled ></textarea></td>
                                         </tr>
                                         <tr> 
                                             <td>Email:</td>
-                                            <td><input id="email" name="email" type="text" class="field_text"   /></td>
+                                            <td><input id="email" name="email" type="text" disabled class="field_text"   /></td>
                                         </tr>
                                         <tr> 
                                             <td>Phone:</td>
-                                            <td><input id="phone" name="phone" type="text" class="field_text"     /></td>
+                                            <td><input id="phone" name="phone" type="text" disabled class="field_text"     /></td>
                                         </tr>
                                         <tr> 
                                             <td>Fax:</td>
-                                            <td><input id="fax" name="fax" type="text" class="field_text"     /></td>
+                                            <td><input id="fax" name="fax" type="text" disabled class="field_text"     /></td>
                                         </tr>
 
                                     </table>
@@ -155,7 +153,7 @@
                                                 <label name="labelDirector">Director </label>
                                             </td>
                                             <td>
-                                                <input type="text" name="txtDirector" id="txtDirectors1"/>
+                                                <input type="text" disabled name="txtDirector" id="txtDirectors1"/>
                                             </td>
                                         </tr>
                                         <tr>
@@ -163,7 +161,7 @@
                                                 <label name="labelLegal">Legal </label>
                                             </td>
                                             <td>
-                                                <input type="text" name="txtLegal" id="txtLegals1"/>
+                                                <input type="text" disabled name="txtLegal" id="txtLegals1"/>
                                             </td>
                                         </tr>
 
@@ -180,19 +178,19 @@
                                     </tr>
                                     <tr>
                                         <td>Position:</td>
-                                        <td><input type="text" name="position_authorizations" id="position_authorizations" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="position_authorizations" id="position_authorizations" class="field_text"     /></td>
                                     </tr>
                                     <tr>
                                         <td>Full legal name:</td>
-                                        <td><input type="text" name="full_legal_name_position_authorizations" id="full_legal_name_position_authorizations" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="full_legal_name_position_authorizations" id="full_legal_name_position_authorizations" class="field_text"     /></td>
                                     </tr>
                                     <tr>
                                         <td>Email:</td>
-                                        <td><input type="text" name="email_position_authorizations" id="email_position_authorizations" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="email_position_authorizations" id="email_position_authorizations" class="field_text"     /></td>
                                     </tr>
                                     <tr>
                                         <td>Phone:</td>
-                                        <td><input type="text" name="phone_position_authorizations" id="phone_position_authorizations" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="phone_position_authorizations" id="phone_position_authorizations" class="field_text"     /></td>
                                     </tr>
                                 </table>
                             </div>
@@ -207,19 +205,19 @@
                                     </tr>
                                     <tr>
                                         <td>Position:</td>
-                                        <td><input type="text" name="position_super_administrator" id="position_super_administrator" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="position_super_administrator" id="position_super_administrator" class="field_text"     /></td>
                                     </tr>
                                     <tr>
                                         <td>Name:</td>
-                                        <td><input type="text" name="name_super_administrator" id="name_super_administrator" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="name_super_administrator" id="name_super_administrator" class="field_text"     /></td>
                                     </tr>
                                     <tr>
                                         <td>Phone number:</td>
-                                        <td><input type="text" name="phone_super_administrator" id="phone_super_administrator" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="phone_super_administrator" id="phone_super_administrator" class="field_text"     /></td>
                                     </tr>
                                     <tr>
                                         <td>Email address:</td>
-                                        <td><input type="text" name="email_super_administrator" id="email_super_administrator" class="field_text"     /></td>
+                                        <td><input type="text" disabled name="email_super_administrator" id="email_super_administrator" class="field_text"     /></td>
                                     </tr>
 
 
@@ -231,19 +229,19 @@
                                         <table>
                                             <tr>
                                                 <td><label name="labelNameContact">Name Contact</label></td>
-                                                <td><input type="text" name="txtNameContact" id="txtNameContact1"/></td>
+                                                <td><input type="text" disabled name="txtNameContact" id="txtNameContact1"/></td>
                                             </tr>
                                             <tr>
                                                 <td><label name="labelPositionContact">Position </label></td>
-                                                <td><input type="text" name="txtPositionContact" id="txtPositionContact1"/></td>
+                                                <td><input type="text" disabled name="txtPositionContact" id="txtPositionContact1"/></td>
                                             </tr>
                                             <tr>
                                                 <td><label name="labelPhoneContact">Phone</label></td>
-                                                <td><input type="text" name="txtPhoneContact" id="txtPhoneContact1"/></td>
+                                                <td><input type="text" disabled name="txtPhoneContact" id="txtPhoneContact1"/></td>
                                             </tr>
                                             <tr>
                                                 <td><label name="labelEmailContact">Email</label></td>
-                                                <td><input type="text" name="txtEmailContact" id="txtEmailContact1"/></td>
+                                                <td><input type="text" disabled name="txtEmailContact" id="txtEmailContact1"/></td>
                                             </tr>
                                         </table>
                                     </div>
@@ -251,7 +249,7 @@
 
                             </div>
                             <center>    
-                                <input type="submit" name="btnKyc" value="Save">
+                                <input type="submit" disabled name="btnKyc" value="Save">
                             </center>
                         </form>
                     </fieldset>
@@ -300,7 +298,7 @@
                         <tr>
                             <td colspan="3">
                                 <center>
-                                    <input type="submit" name="btnProInfo" value="Save">
+                                    <input type="submit" disabled name="btnProInfo" value="Save">
                                 </center>
                             </td>
                         </tr>
@@ -371,7 +369,7 @@
                         <tr>
                             <td colspan="3">
                                 <center>
-                                    <input type="submit" name="btnService" value="Save">
+                                    <input type="submit" disabled name="btnService" value="Save">
                                 </center>
                             </td>
                         </tr>
@@ -419,7 +417,7 @@
                             <tr>
                                 <td colspan="2">
                                     <center>
-                                        <input type="submit" name="btnHosting" value="Save">
+                                        <input type="submit" disabled name="btnHosting" value="Save">
                                     </center>
                                 </td>
                             </tr>
@@ -459,7 +457,7 @@
                             <tr>
                                 <td colspan="2">
                                     <center>
-                                        <input type="submit" name="btnWebsite" value="Save">
+                                        <input type="submit" disabled name="btnWebsite" value="Save">
                                     </center>
 
                                 </td>
@@ -478,11 +476,11 @@
   <p>
     <span id='login_error_msg' class="login_error" style="display:none">&nbsp;</span>
 </p>
-  <div style="clear:both"></div>
-  <p><span class="login_label">login</span> <span class="login_input"><input type="text"/></span></p>
-  <div style="clear:both"></div>
-  <p><span class="login_label">password</span> <span class="login_input"><input type="password"/></span></p>
-  <div style="clear:both"></div>
+<div style="clear:both"></div>
+<p><span class="login_label">login</span> <span class="login_input"><input type="text" disabled/></span></p>
+<div style="clear:both"></div>
+<p><span class="login_label">password</span> <span class="login_input"><input type="password"/></span></p>
+<div style="clear:both"></div>
 </div>
 {$footer}
 </form>

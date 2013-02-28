@@ -87,7 +87,7 @@
                 </h2>
                 <div class="block" id="formsKyc">
                     <fieldset >
-                        <legend  id="legendKyc" onclick="habilitar('Kyc');">Click to modify User information</legend>
+                        <legend  id="legendKyc">Click to modify User information</legend>
                         <form action="businessLayer/fromcliente.php" id="agregar" method="post" onsubmit="return validarCampos(agregar);">
                             <div id="accordion">
                                 <div>
@@ -470,17 +470,6 @@
 
     </div>
 
-</div>
-
-<div id="login" style="display:none">
-  <p>
-    <span id='login_error_msg' class="login_error" style="display:none">&nbsp;</span>
-</p>
-<div style="clear:both"></div>
-<p><span class="login_label">login</span> <span class="login_input"><input type="text" disabled/></span></p>
-<div style="clear:both"></div>
-<p><span class="login_label">password</span> <span class="login_input"><input type="password"/></span></p>
-<div style="clear:both"></div>
 </div>
 {$footer}
 </form>

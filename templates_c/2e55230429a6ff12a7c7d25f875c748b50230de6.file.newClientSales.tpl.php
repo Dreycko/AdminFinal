@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-02-28 11:45:17
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-28 15:21:55
          compiled from "templates\newClientSales.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:22067512b9f4d8198c9-35629706%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2e55230429a6ff12a7c7d25f875c748b50230de6' => 
     array (
       0 => 'templates\\newClientSales.tpl',
-      1 => 1362069914,
+      1 => 1362082912,
       2 => 'file',
     ),
   ),
@@ -122,7 +122,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 </h2>
                 <div class="block" id="formsKyc">
                     <fieldset >
-                        <legend  id="legendKyc" onclick="habilitar('Kyc');">Click to modify User information</legend>
+                        <legend  id="legendKyc">Click to modify User information</legend>
                         <form action="businessLayer/fromcliente.php" id="agregar" method="post" onsubmit="return validarCampos(agregar);">
                             <div id="accordion">
                                 <div>
@@ -510,17 +510,6 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 
     </div>
 
-</div>
-
-<div id="login" style="display:none">
-  <p>
-    <span id='login_error_msg' class="login_error" style="display:none">&nbsp;</span>
-</p>
-<div style="clear:both"></div>
-<p><span class="login_label">login</span> <span class="login_input"><input type="text" disabled/></span></p>
-<div style="clear:both"></div>
-<p><span class="login_label">password</span> <span class="login_input"><input type="password"/></span></p>
-<div style="clear:both"></div>
 </div>
 <?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
 

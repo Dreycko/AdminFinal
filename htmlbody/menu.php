@@ -35,11 +35,8 @@ class Menu
 		<div class='clear'></div>
 		<div class='container grid_12'> 
 		<ul class='nav main'> 
-		<li><a href='index.php?menu=newClient' name ='newClient'><span>New</span></a></li>
 		<li><a href='index.php?menu=clientList' name ='clientList'><span>Client List</span></a></li>
 		<li><a href='index.php?menu=newClientSales' name ='newClientSales'><span>New Client</span></a></li>
-		<li><a href='index.php?menu=addModule' name ='addModule'><span>Add Module</span></a></li>
-		<li><a href='index.php?menu=message' name ='message'><span>Message</span></a></li>
 		<li class='secondary'><a href='businessLayer/longOut.php' name ='longOut'>longOut</a></li>
 		</ul>
 		</div>

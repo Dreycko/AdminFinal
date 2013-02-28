@@ -44,19 +44,14 @@ function habilitar(form)
 	legend.innerHTML = text;
 
 	for (var i =0 ; i < input.length ; i++ )
-	 {
+	{
 		//alert(input[i]);
 		input[i].disabled = false;
 
 	};
 
-	for (var j =0 ; j < select.length ; j++ )
-	 {
-		//alert(input[i]);
-		select[j].disabled = false;
 
-	};
-	
+
 	
 	
 
@@ -65,7 +60,3 @@ function habilitar(form)
 }		
 
 
-function deshabilitar()
-{
-	
-}	

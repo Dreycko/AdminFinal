@@ -5,16 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="varios/css/960/grid.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="varios/css/960/layout.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="varios/css/960/nav.css" media="screen" />
-
+{$libraries}
 </head>
 <body>
 	<div class = "container_12">
-		{$libraries}
+		
 		{$menu}
 		<div id ="tableActive" calss="grid_12">
 			
 
-			<table summary="This table includes examples of as many table elements as possible">
+			<table  class="grid_12">
 				<!--<caption>Active</caption>-->
 				<colgroup>
 				<col class="colA" />
@@ -111,7 +111,7 @@
 			</tbody>
 		</table>
 
-		<table summary="This table includes examples of as many table elements as possible">
+		<table  class="grid_12"summary="This table includes examples of as many table elements as possible">
 			<!--<caption>Active</caption>-->
 			<colgroup>
 			<col class="colA" />

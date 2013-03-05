@@ -30,12 +30,20 @@ class Message
 
 		
 		
-			$_SESSION["msg"] = $msg["msg"];
-			$_SESSION["msgIdClient"] = $msg["idClient"];
-			$_SESSION["msgEntity"] = $entity;
-			$_SESSION["msgPage"] =  $page;
-			header("Location: ../index.php?menu=message");
+		$_SESSION["msg"] = $msg["msg"];
+		$_SESSION["msgIdClient"] = $msg["idClient"];
+		$_SESSION["msgEntity"] = $entity;
+		$_SESSION["msgPage"] =  $page;
+		header("Location: ../index.php?menu=message");
 		
+	}
+
+	function addClientSale($msg)
+	{
+		$_SESSION["msg"] = $msg;
+		header("Location: ../index.php?menu=message");
+
+
 	}
 
 

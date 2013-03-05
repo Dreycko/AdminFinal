@@ -29,12 +29,12 @@ function message(option, page,type,entity)
 			{
 
 
-			var h2TituloText = document.createTextNode("Creacion Correcta");
-			h2Titulo.appendChild(h2TituloText);
+				var h2TituloText = document.createTextNode("Creacion Correcta");
+				h2Titulo.appendChild(h2TituloText);
 
 
-			var pMessageText = document.createTextNode("El cliente "+entity+" se a creado correctamente");
-			pMessage.appendChild(pMessageText);
+				var pMessageText = document.createTextNode("El cliente "+entity+" se a creado correctamente");
+				pMessage.appendChild(pMessageText);
 
 
 			//Se crea los dos botones para ("Crear un nuevo cliente o adicionar al ya exsitente los modulos correspondiente  ")
@@ -65,6 +65,43 @@ function message(option, page,type,entity)
 			
 
 			//center.appendChild(msgBox);
+
+		}
+		else if(type =="newClientSales")
+		{
+			var h2TituloText = document.createTextNode("Creacion Correcta");
+				h2Titulo.appendChild(h2TituloText);
+
+
+				var pMessageText = document.createTextNode("El cliente "+entity+" se a creado correctamente");
+				pMessage.appendChild(pMessageText);
+
+
+			//Se crea los dos botones para ("Crear un nuevo cliente o adicionar al ya exsitente los modulos correspondiente  ")
+			var buttonAdd = document.createElement("button");	
+			var buttonNew = document.createElement("button");
+			// se le asigna los valores de nombre a los botones
+			buttonNew.name = "buttonNew";
+			buttonAdd.name = "buttonAdd";
+			// se le asigna los nombre que se le mostrara a los clientes
+			buttonNew.value = "New Entity";
+			buttonAdd.value = "Add Module";
+			// se crea el evento de de los botones
+			buttonNew.setAttribute("onclick", "redireccionar('newClientSales')");
+			buttonAdd.setAttribute("onclick", "redireccionar('newClientSales2')");
+			//se crea el texto del botton
+
+			var buttonLabelNew = document.createTextNode("New Entity");
+			var buttonLabelAdd = document.createTextNode("Add KYC");
+
+			buttonNew.appendChild(buttonLabelNew);
+			buttonAdd.appendChild(buttonLabelAdd);
+
+
+			
+			divButton.appendChild(buttonNew);
+			divButton.appendChild(buttonAdd);
+
 
 		}
 		else if(type == "searchModule")
@@ -115,6 +152,7 @@ function message(option, page,type,entity)
 
 
 	} 
+	
 	else
 	{
 		$("#main-box, #msg-box").fadeOut(1000);

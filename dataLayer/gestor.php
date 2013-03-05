@@ -9,6 +9,10 @@ class gestor
 	var $db = "adminfinal";
 	var $cn;
 
+	function info()
+	{
+		echo "gestor";
+	}
 	function gestor()
 	{
 	}
@@ -237,9 +241,10 @@ class gestor
 		return $entity;
 	}
 
-	function deleteCaching()
+	function deleteCaching($page)
 	{
 
+	
 		//definimos el directoriode los archivos	
 		/*$pathTempalte = "../templates/";
 		$dir = opendir($pathTempalte);
@@ -263,6 +268,7 @@ class gestor
 		
 			//cache
 		//echo "cache";
+
 		$pathTempalte_c = "../templates_c/";
 		//echo $pathTempalte_C ;
 		$dir_c = opendir($pathTempalte_c);
@@ -271,7 +277,7 @@ class gestor
 		{ 
 			//echo $elemento_c." tamano de letras".strlen($elemento_c)."</br>";
 			//echo substr($elemento_c, -18,18)."</br>" ;
-			if (substr($elemento_c, -18,18) =="addModule2.tpl.php" )
+			if (substr($elemento_c, ((strlen($page)+8)*-1),(strlen($page)+8)) == $page.".tpl.php" )
 			{	
 				$file = $elemento_c;
 
@@ -279,21 +285,39 @@ class gestor
 			}	
 		}
 
-		var_dump($file);
+		//var_dump($file);
 		closedir($dir_c);
 
 		return $file;
 	}
 
 
- function insertModule($consulta)
- {
- 		$this-> conectar();
+
+
+
+	function insertModule($consulta)
+	{
+		$this-> conectar();
 		$resp = $this->consultar($consulta);
 		$this-> cerrarConexion();
 		return  $resp;
 
- }
+	}
+
+	function newClientSaves($datos)
+	{
+
+		//var_dump($_SESSION);
+		//exit();
+		$consulta = 
+		"insert into entity (`id_user`,`company_name`,`abbreviation_name`,`incorporation_date`, `contact`,`package`,`hosting`,`domain`) 
+		values('".$_SESSION["userId"]."','".$datos["company_name"]."','".$datos["code"]."','".$datos["incorporation_date"]."','".$datos["contact"]."','".$datos["package"]."','".$datos["hosting"]."','".$datos["domain"]."')";
+		$this-> conectar();
+		$entity = $this->realizarOperacion($consulta);
+		$this-> cerrarConexion();
+		return $entity;
+
+	}
 
 
 

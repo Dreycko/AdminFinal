@@ -36,11 +36,6 @@ class index
 
 
 }
-
-
-
-
-
 echo "<noscript> No tienes JS</noscript>";
 $call = new index();
 global $smarty;
@@ -50,11 +45,6 @@ global $smarty;
 
 if ($_SESSION['isLogin'])
 {
-
-
-
-
-
   $Menu = new Menu();
   $menu = $Menu->mostrar($_SESSION['user']);
   $smarty->assign('menu',$menu);
@@ -92,6 +82,10 @@ if ($_SESSION['isLogin'])
 case 'newClientSales':
   unset($_SESSION["msgEntity"]);
   $call->display('newClientSales.tpl');
+  break;
+  case 'newClientSales2':
+  unset($_SESSION["msgEntity"]);
+  $call->display('newClientSales2.tpl');
   break;
 
 
@@ -166,7 +160,7 @@ case 'newClientSales':
 
   default:
   $smarty->assign('titleMenu','New Client');
-  $call->display('formCliente.tpl');
+  $call->display('newClientSales.tpl');
                      //echo "defaul";
   break;
 }

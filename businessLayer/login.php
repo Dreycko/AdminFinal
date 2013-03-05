@@ -39,10 +39,12 @@ class  Login
 		{
 				//echo "no es null ";
 				//var_dump($rol);
+				//exit();
 			$_SESSION["user"] = $rol[0]->username;
 			$_SESSION["rol"] = $rol[0]->rol;
 			$_SESSION["user_status"] = $rol[0]->user_status;
 			$_SESSION["isLogin"] = true;
+			$_SESSION["userId"] = $rol[0]->id;
 				//echo "se crearon las seciones: ".$_SESSION["user"].$_SESSION["rol"].$_SESSION["user_status"]."->".$_SESSION["isLogin"];
 			header("Location: ../index.php");
 			

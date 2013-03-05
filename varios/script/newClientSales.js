@@ -30,6 +30,66 @@ function load()
 
 }
 
+function validar(div)
+{
+	
+	var div	= document.getElementById("Sales");
+	var input = div.getElementsByTagName("input");
+	var select = div.getElementsByTagName("select");
+
+
+	
+	if (input[0].name == "code" &&  input[0].value =="")
+	{
+		alert("El campo code es requerido");
+		input[0].focus();
+
+	}
+	else if(input[0].value.length!= 3)
+	{
+		alert("El campo code debe de ser tres caracteres");
+		input[0].focus();
+	}
+	else if(input[1].name == "company_name" &&  input[1].value =="") 
+	{
+		alert("El campo company name es requerido");
+		input[1].focus();
+	}
+	else
+	{
+		
+		// se crea el formulario
+		var form = document.createElement("form");
+		//se agraga la forma de mandar la informacion
+		form.method="post";
+		form.action="businessLayer/newClientSales.php";
+		for (var i=0 ; i < input.length; i++)
+		{
+			
+			var dato = document.createElement("input");
+			dato.setAttribute("name",input[i].name);
+			dato.setAttribute("value", input[i].value);
+			//alert(input);
+			form.appendChild(dato);
+		};
+
+		for (var j=0 ; j < select.length; j++)
+		{
+			var index = select[j].selectedIndex
+			var datoSelect = document.createElement("input");
+			datoSelect.setAttribute("name",select[j].name);
+			datoSelect.setAttribute("value", select[j][index].value);
+			form.appendChild(datoSelect);
+
+		};
+
+
+		form.submit();
+		
+	};
+	
+
+}
 
 
 function habilitar(form)

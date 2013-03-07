@@ -5,16 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="varios/css/960/grid.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="varios/css/960/layout.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="varios/css/960/nav.css" media="screen" />
-{$libraries}
+	<script type='text/javascript' src='varios/script/clientList.js'></script>
+	{$libraries}
 </head>
-<body>
+<body onload="pag();">
+	cantidad:{$count}
 	<div class = "container_12">
 		
 		{$menu}
 		<div id ="tableActive" calss="grid_12">
 			
 
-			<table  class="grid_12">
+			<table  id="active" class="grid_12">
 				<!--<caption>Active</caption>-->
 				<colgroup>
 				<col class="colA" />
@@ -43,76 +45,34 @@
 
 			</tfoot>
 			<tbody>
+				{for $foo=0 to $count}
 				<tr class="odd">
+					<th>{$dato[$foo][2]}</th>
+					<td>{$dato[$foo][3]}</td>
+					<th>{$dato[$foo][1]}</th>
+					<td>{$dato[$foo][4]}</td>
 					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<th>Lorem ipsum</th>
-					<td class="currency">$125.00</td>
-				</tr>
-				<tr>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
+					<td>{$dato[$foo][5]}</td>
+					<th>{$dato[$foo][6]}</th>
+					<td>{$dato[$foo][7]}</td>
 					<th>Lorem ipsum</th>
 					<th>Lorem ipsum</th>
 					<td class="currency">$125.00</td>
 				</tr>
-				<tr class="odd">
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<th>Lorem ipsum</th>
-					<td class="currency">$125.00</td>
-				</tr>
-				<tr>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<th>Lorem ipsum</th>
-					<td class="currency">$125.00</td>
-				</tr>
-				<tr class="odd">
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<td>Dolor sit</td>
-					<th>Lorem ipsum</th>
-					<th>Lorem ipsum</th>
-					<td class="currency">$125.00</td>
-				</tr>
-			</tbody>
-		</table>
+				{/for}
 
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="11">
+						
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+<!--
 		<table  class="grid_12"summary="This table includes examples of as many table elements as possible">
-			<!--<caption>Active</caption>-->
+			<caption>Active</caption>
 			<colgroup>
 			<col class="colA" />
 			<col class="colB" />
@@ -153,61 +113,10 @@
 				<th>Lorem ipsum</th>
 				<td class="currency">$125.00</td>
 			</tr>
-			<tr>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<th>Lorem ipsum</th>
-				<td class="currency">$125.00</td>
-			</tr>
-			<tr class="odd">
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<th>Lorem ipsum</th>
-				<td class="currency">$125.00</td>
-			</tr>
-			<tr>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<th>Lorem ipsum</th>
-				<td class="currency">$125.00</td>
-			</tr>
-			<tr class="odd">
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<td>Dolor sit</td>
-				<th>Lorem ipsum</th>
-				<th>Lorem ipsum</th>
-				<td class="currency">$125.00</td>
-			</tr>
+			
 		</tbody>
 	</table>
-
+-->
 </div>
 
 {$footer}

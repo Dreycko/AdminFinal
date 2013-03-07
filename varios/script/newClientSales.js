@@ -111,12 +111,6 @@ function habilitar(form)
 	};
 
 
-
-	
-	
-
-	//alert();
-
 }		
 
 

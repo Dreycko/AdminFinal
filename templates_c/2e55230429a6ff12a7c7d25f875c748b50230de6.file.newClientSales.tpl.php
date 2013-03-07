@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-03-05 15:45:00
+<?php /* Smarty version Smarty-3.1.12, created on 2013-03-07 12:37:24
          compiled from "templates\newClientSales.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5675135294fbcc4b0-30545025%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2e55230429a6ff12a7c7d25f875c748b50230de6' => 
     array (
       0 => 'templates\\newClientSales.tpl',
-      1 => 1362516294,
+      1 => 1362674407,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5135294fc78c95_45028829')) {function content_5135294fc78c95_45028829($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_select_date')) include 'C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\AdminFinal\\smarty\\plugins\\function.html_select_date.php';
-?><html>
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
 <head>
     <link rel="stylesheet" type="text/css" href="varios/css/960/reset.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="varios/css/960/text.css" media="screen" />

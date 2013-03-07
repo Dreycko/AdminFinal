@@ -319,6 +319,21 @@ class gestor
 
 	}
 
+	function clientListConsultar()
+	{
+
+		//var_dump($_SESSION);
+		//exit();
+		$consulta = 
+		"select * from entity order by id_entity DESC";
+		$this-> conectar();
+		$entity = $this->consultar($consulta);
+		$this-> cerrarConexion();
+		return $entity;
+
+	}
+
+
 
 
 

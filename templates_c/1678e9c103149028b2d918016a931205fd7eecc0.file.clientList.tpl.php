@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-03-07 16:43:32
+<?php /* Smarty version Smarty-3.1.12, created on 2013-03-09 10:04:54
          compiled from "templates\clientList.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:41685136031e262197-85395505%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1678e9c103149028b2d918016a931205fd7eecc0' => 
     array (
       0 => 'templates\\clientList.tpl',
-      1 => 1362692609,
+      1 => 1362841341,
       2 => 'file',
     ),
   ),
@@ -39,7 +39,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<?php echo $_smarty_tpl->tpl_vars['libraries']->value;?>
 
 </head>
-<body onload="pag();">
+<body onload="pag(0);">
 	cantidad:<?php echo $_smarty_tpl->tpl_vars['count']->value;?>
 
 	<div class = "container_12">
@@ -74,15 +74,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<th class="currency">Paid Until</th>
 				</tr>
 			</thead>
-			<tfoot>
-
-			</tfoot>
 			<tbody>
-				<?php $_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int)ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? $_smarty_tpl->tpl_vars['count']->value+1 - (0) : 0-($_smarty_tpl->tpl_vars['count']->value)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
+				<?php $_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int)ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? $_smarty_tpl->tpl_vars['count']->value-1+1 - (0) : 0-($_smarty_tpl->tpl_vars['count']->value-1)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
 if ($_smarty_tpl->tpl_vars['foo']->total > 0){
 for ($_smarty_tpl->tpl_vars['foo']->value = 0, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++){
 $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration == 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration == $_smarty_tpl->tpl_vars['foo']->total;?>
-				<tr class="odd">
+				<tr class="odd" style="display:none">
 					<th><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][2];?>
 </th>
 					<td><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][3];?>
@@ -99,19 +96,14 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 					<td><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][7];?>
 </td>
 					<th>Lorem ipsum</th>
-					<th>Lorem ipsum</th>
+					<th><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][0];?>
+</th>
 					<td class="currency">$125.00</td>
 				</tr>
 				<?php }} ?>
 
 			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="11">
-						
-					</td>
-				</tr>
-			</tfoot>
+			
 		</table>
 <!--
 		<table  class="grid_12"summary="This table includes examples of as many table elements as possible">

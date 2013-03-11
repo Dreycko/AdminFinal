@@ -8,7 +8,7 @@
 	<script type='text/javascript' src='varios/script/clientList.js'></script>
 	{$libraries}
 </head>
-<body onload="pag();">
+<body onload="pag(0);">
 	cantidad:{$count}
 	<div class = "container_12">
 		
@@ -41,12 +41,9 @@
 					<th class="currency">Paid Until</th>
 				</tr>
 			</thead>
-			<tfoot>
-
-			</tfoot>
 			<tbody>
-				{for $foo=0 to $count}
-				<tr class="odd">
+				{for $foo=0 to $count-1}
+				<tr class="odd" style="display:none">
 					<th>{$dato[$foo][2]}</th>
 					<td>{$dato[$foo][3]}</td>
 					<th>{$dato[$foo][1]}</th>
@@ -56,19 +53,13 @@
 					<th>{$dato[$foo][6]}</th>
 					<td>{$dato[$foo][7]}</td>
 					<th>Lorem ipsum</th>
-					<th>Lorem ipsum</th>
+					<th>{$dato[$foo][0]}</th>
 					<td class="currency">$125.00</td>
 				</tr>
 				{/for}
 
 			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="11">
-						
-					</td>
-				</tr>
-			</tfoot>
+			
 		</table>
 <!--
 		<table  class="grid_12"summary="This table includes examples of as many table elements as possible">

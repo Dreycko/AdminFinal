@@ -1,14 +1,14 @@
 <?php
+include("db.php");
 session_start();
 class gestor
 {
-
+	
 	var $servidor = "localhost";
 	var $user = "root";
 	var $pass = "";
 	var $db = "adminfinal";
 	var $cn;
-
 	function info()
 	{
 		echo "gestor";
@@ -244,7 +244,7 @@ class gestor
 	function deleteCaching($page)
 	{
 
-	
+
 		//definimos el directoriode los archivos	
 		/*$pathTempalte = "../templates/";
 		$dir = opendir($pathTempalte);

@@ -32,7 +32,12 @@ function food(pagina)
 	var	btnfin =document.createElement("button");
 	var	btnnex =document.createElement("button");
 	var	btnfpre= document.createElement("button");
+	var go = document.createElement("button");
+	var goText = document.createElement("input");
+	goText.id = "goText";
 
+	go.appendChild(document.createTextNode("GO"));
+	go.setAttribute("onClick","go();")
 
 	btnini.appendChild(document.createTextNode("<<"));
 	btnfin.appendChild(document.createTextNode(">>"));
@@ -148,6 +153,8 @@ else
 	btnfin.setAttribute("onClick","paginar("+fin+");");
 	cel.appendChild(btnnex);
 	cel.appendChild(btnfin);
+	cel.appendChild(go);
+	cel.appendChild(goText);
 	cel.setAttribute("colspan", "11");
 	row.appendChild(cel);
 	tfoot.appendChild(row);
@@ -205,5 +212,29 @@ function paginar(pagina)
 
 	
 	mostrar(0,0,pagina);
+}
+function go ()
+{
+
+	var go = document.getElementById("goText");
+	var resp =isNumber(go.value);
+	if (resp)
+	{
+		paginar(parseInt(go.value));
+		//food(go.value);
+	}
+	else
+	{
+		alert("Introdusca una fila correcta");
+		go.value = "";
+		go.focus();
+
+	};
+	
+
+}
+
+function isNumber(n) {
+	return !isNaN(parseFloat(n)) && isFinite(n);
 }
 

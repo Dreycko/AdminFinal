@@ -59,25 +59,30 @@ function food(pagina)
 
 	if (pagina ===0) 
 	{
-
+		
 		for(i = 0; i <10; i++)
 		{
-			
-			var btn = document.createElement("button");
+			if (i <= (rowTot/10).toFixed(0))
+				{var btn = document.createElement("button");
 			btn.name = (pagina+i);
 			btn.appendChild(document.createTextNode(pagina+i));
 			btn.setAttribute("onClick"," paginar("+(pagina+i)+");")
 			btn.setAttribute("style","width: 30px; margin:2px");
 			cel.appendChild(btn);
+		};
 
-		}
+	}
 
-	} 
-	else if (pagina >0 && pagina <4)
+
+} 
+else if (pagina >0 && pagina <4)
+{
+
+	
+	for(i = 0; i <10; i++)
 	{
-		for(i = 0; i <10; i++)
+		if (i <= (rowTot/10).toFixed(0))
 		{
-
 			var btn = document.createElement("button");
 			btn.name = (pagina+i-pagina);
 			btn.appendChild(document.createTextNode(pagina+i-pagina));
@@ -105,10 +110,12 @@ function food(pagina)
 
 		};
 
+
 		cel.appendChild(btn);
 
+	};
+}
 
-	}
 
 }
 else
@@ -146,10 +153,11 @@ else
 
 };
 	//alert(cel.childNodes[9].getAttribute("width"));
-
-	btnnex.setAttribute("onClick","paginar("+(pagina+1)+");");
-	var fin = (rowTot/10).toFixed(0)-1;
+	var fin = (rowTot/10).toFixed(0);
 	//alert(fin);
+	var indiceNex;
+	if (pagina <= fin) {indiceNex =pagina+1;} else{indiceNex =pagina;};
+	btnnex.setAttribute("onClick","paginar("+indiceNex+");"); 
 	btnfin.setAttribute("onClick","paginar("+fin+");");
 	cel.appendChild(btnnex);
 	cel.appendChild(btnfin);
@@ -200,8 +208,9 @@ function mostrar(ini,fin,pagina)
 
 	for (var i =ini; i <= fin; i++)
 	{
-		
-		row[i].removeAttribute("style");
+		if (row[i]) {
+			row[i].removeAttribute("style");
+		};
 	};
 
 	food(pagina);
@@ -218,7 +227,10 @@ function go ()
 
 	var go = document.getElementById("goText");
 	var resp =isNumber(go.value);
-	if (resp)
+	var totButton = document.getElementsByTagName("button");
+	//alert(totButton.length-5);
+
+	if (resp && go.value <=(totButton.length-6) )
 	{
 		paginar(parseInt(go.value));
 		//food(go.value);
@@ -237,4 +249,64 @@ function go ()
 function isNumber(n) {
 	return !isNaN(parseFloat(n)) && isFinite(n);
 }
+function actualizar(idrow)
+{
+		//alert(idrow);
+		var row = document.getElementById(idrow);
+		var	labels = row.getElementsByTagName("label");
+		var divForm = document.getElementById("form");
+		var inputForm = divForm.getElementsByTagName("input");
+		
+		for (var i = 0; i < labels.length; i++) 
+		{
+			
+			inputForm[i].value =labels[i].innerHTML;
 
+		};
+
+		//divForm.removeAttribute("style");
+
+
+		$("#main-box, #form").fadeIn(500);
+
+
+
+	/*
+
+		else
+		{
+			$("form").fadeOut(1000);
+			window.location=(page+".php");
+
+		};
+
+		*/
+
+	}
+
+	function exit()
+	{
+		$("#main-box, #form").fadeOut(500);
+	}
+
+	function saveForm()
+	{
+
+
+
+		document.formSave.submit();
+		$("#main-box, #form").fadeOut(500);
+
+
+	}
+
+	function overin(row)
+	{
+		//alert(row);
+		//row.setAttribute("bgcolor", "#FF0000")
+
+	}
+	function overout(row)
+	{
+
+	}

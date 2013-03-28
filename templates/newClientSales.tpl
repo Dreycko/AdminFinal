@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html>
 <head>
@@ -9,15 +9,16 @@
     <link rel="stylesheet" type="text/css" href="varios/css/960/layout.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="varios/css/960/nav.css" media="screen" />
     <script src='varios/script/newClientSales.js'></script>
+    
     {$libraries}
 
 </head>
 <body onload="load();">
-   
-   <form action="businessLayer/newClientSales.php" method= "post">
+
+ <form action="businessLayer/newClientSales.php" method= "post">
     {$menu}
     <div class = "container_12">
-     <div class="grid_4">
+       <div class="grid_4">
         <div class="box">
             <h2>
                 <a href="#" id="toggle-forms">Sales</a>

@@ -88,13 +88,15 @@ if ($_SESSION['isLogin'])
 
    $datoClient[$i][0] = $dato[$i]->id_entity;
    $datoClient[$i][1] = $dato[$i]->company_name;
-   $datoClient[$i][2] = $dato[$i]->creation_date;
+   $datoClient[$i][2] = $dato[$i]->incorporation_date;
    $datoClient[$i][3] = $dato[$i]->abbreviation_name;
    $datoClient[$i][4] = $dato[$i]->contact;
    $datoClient[$i][5] = $dato[$i]->package;
    $datoClient[$i][6] = $dato[$i]->hosting;
    $datoClient[$i][7] = $dato[$i]->domain;
  }
+ //var_dump($dato);
+ //exit();
  $smarty->assign('dato',$datoClient);
  $smarty->assign('count',$conut);
  unset($_SESSION["msgEntity"]);

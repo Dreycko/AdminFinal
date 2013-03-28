@@ -311,7 +311,9 @@ class gestor
 		//exit();
 		$consulta = 
 		"insert into entity (`id_user`,`company_name`,`abbreviation_name`,`incorporation_date`, `contact`,`package`,`hosting`,`domain`) 
-		values('".$_SESSION["userId"]."','".$datos["company_name"]."','".$datos["code"]."','".$datos["incorporation_date"]."','".$datos["contact"]."','".$datos["package"]."','".$datos["hosting"]."','".$datos["domain"]."')";
+		values('".$_SESSION["userId"]."','".$datos["company_name"]."','".$datos["code"]."','".$datos["incorporation_date"]."','".$datos["contact_sale"]."','".$datos["package"]."','".$datos["hosting"]."','".$datos["domain"]."')";
+		//echo $consulta;
+		//exit();
 		$this-> conectar();
 		$entity = $this->realizarOperacion($consulta);
 		$this-> cerrarConexion();
@@ -325,7 +327,7 @@ class gestor
 		//var_dump($_SESSION);
 		//exit();
 		$consulta = 
-		"select * from entity order by id_entity DESC";
+		"select * from entity order by id_entity DESC ";
 		$this-> conectar();
 		$entity = $this->consultar($consulta);
 		$this-> cerrarConexion();

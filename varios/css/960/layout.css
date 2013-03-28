@@ -518,3 +518,9 @@ input.search.button {
 #kwick .four {
 	background: #999;
 }
+
+
+/*hover de las tablas*/
+#active tbody tr:hover { background: #FCF; }
+/*#active tbody tr:hover { background: #fcf; }*/
+

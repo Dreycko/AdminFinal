@@ -11,7 +11,8 @@ if ($_POST["btnKyc"]=="Save")
 if($_POST["btnSales"]=="Save")
 {
 	// se crea las variables de array para la informacion 
-
+//var_dump($_POST);
+//exit();
 	$arraySave = array();
 	
 	$date = date_create(sprintf("%s",$_POST["StartDateYear"])."-".sprintf("%s",$_POST["StartDateMonth"])."-".sprintf("%s",$_POST["StartDateDay"]));
@@ -58,6 +59,9 @@ if($_POST["btnSales"]=="Save")
 				break;
 				case 'domain':
 				$element->setAttribute("value",$arraySave["domain"]);
+				break;
+				case 'contact':
+				$element->setAttribute("value",$arraySave["contact"]);
 				break;
 
 				default:

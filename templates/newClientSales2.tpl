@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="varios/css/960/reset.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/text.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/grid.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/layout.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/nav.css" media="screen"><script src="varios/script/newClientSales.js"></script></head><body onload="habilitar('Kyc');"><p>
     {$libraries}
 
@@ -23,18 +23,18 @@
                                 </td>
                                 
                             </tr><tr><td><label>CODE:</label></td>
-                                <td><input type="text" placeholder="Tres caracteres" disabled name="code" value="uet"></td>
+                                <td><input type="text" placeholder="Tres caracteres" disabled name="code" value="EUG"></td>
                             </tr><tr><td><label>Company Name:</label></td>
-                                <td><input type="text" disabled name="company_name" value="sdf"></td>
+                                <td><input type="text" disabled name="company_name" value="fgdfgdfg"></td>
                             </tr><tr><td><label>Contact:</label></td>
-                                <td><input type="text" disabled name="contact_sale" value="sdfsdf"></td>
+                                <td><input type="text" disabled name="contact_sale" value="eugenio"></td>
                             </tr><tr><td><label>Package:</label></td>
                                 <td>
                                     <select name="package" id="package"><option value="core">Core</option><option value="full">Full</option></select></td>
                           </tr><tr><td><label>Hosting:</label></td>
-                            <td><input type="text" disabled name="hosting" value="sdfsdf"></td>
+                            <td><input type="text" disabled name="hosting" value="dfgdfg"></td>
                         </tr><tr><td><label>Domain:</label></td>
-                            <td><input type="text" disabled name="domain" value="sdfsdfsdf"></td>
+                            <td><input type="text" disabled name="domain" value="dfgdfgdfg"></td>
                         </tr></tbody><tfoot><tr><td colspan="2">
                                 <center>
                                     <input type="button" disabled name="btnSales" value="Save" onclick="validar();"></center>

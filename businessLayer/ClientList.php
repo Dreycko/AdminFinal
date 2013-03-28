@@ -1,10 +1,20 @@
 <?php
 include("../dataLayer/gestor.php");
 
+$obj = new clientList;
 
-/**
-* 
-*/
+switch ($_GET["op"])
+{
+	case 'save':
+	$obj->save();
+	break;
+	
+	default:
+		# code...
+	break;
+}
+
+
 class clientList
 {
 	
@@ -22,6 +32,18 @@ class clientList
 		//exit();
 
 	}
+
+	function save()
+	{
+		$gestor = new gestor();
+		
+		var_dump($_POST);
+
+		//$dato = $gestor->clientListConsultar();
+		//return $dato;
+	}
+
+
 
 
 }

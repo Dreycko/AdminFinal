@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-03-05 15:45:16
+<?php /* Smarty version Smarty-3.1.12, created on 2013-03-16 17:48:29
          compiled from "templates\newClientSales2.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:273875136595c97cf88-60846359%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:84105144e8ade5f463-10710722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '61a90dc4d068f3c9e26857e7251dab4d84a40ee2' => 
     array (
       0 => 'templates\\newClientSales2.tpl',
-      1 => 1362516314,
+      1 => 1363470505,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '273875136595c97cf88-60846359',
+  'nocache_hash' => '84105144e8ade5f463-10710722',
   'function' => 
   array (
   ),
@@ -27,10 +27,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_5136595c9ad966_28135409',
+  'unifunc' => 'content_5144e8ae029043_98443855',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5136595c9ad966_28135409')) {function content_5136595c9ad966_28135409($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_select_date')) include 'C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\AdminFinal\\smarty\\plugins\\function.html_select_date.php';
-?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?php if ($_valid && !is_callable('content_5144e8ae029043_98443855')) {function content_5144e8ae029043_98443855($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_select_date')) include 'C:\\Program Files (x86)\\Zend\\Apache2\\htdocs\\AdminFinal\\smarty\\plugins\\function.html_select_date.php';
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="varios/css/960/reset.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/text.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/grid.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/layout.css" media="screen"><link rel="stylesheet" type="text/css" href="varios/css/960/nav.css" media="screen"><script src="varios/script/newClientSales.js"></script></head><body onload="habilitar('Kyc');"><p>
     <?php echo $_smarty_tpl->tpl_vars['libraries']->value;?>
 
@@ -58,18 +58,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 </td>
                                 
                             </tr><tr><td><label>CODE:</label></td>
-                                <td><input type="text" placeholder="Tres caracteres" disabled name="code" value="uet"></td>
+                                <td><input type="text" placeholder="Tres caracteres" disabled name="code" value="EUG"></td>
                             </tr><tr><td><label>Company Name:</label></td>
-                                <td><input type="text" disabled name="company_name" value="sdf"></td>
+                                <td><input type="text" disabled name="company_name" value="fgdfgdfg"></td>
                             </tr><tr><td><label>Contact:</label></td>
-                                <td><input type="text" disabled name="contact_sale" value="sdfsdf"></td>
+                                <td><input type="text" disabled name="contact_sale" value="eugenio"></td>
                             </tr><tr><td><label>Package:</label></td>
                                 <td>
                                     <select name="package" id="package"><option value="core">Core</option><option value="full">Full</option></select></td>
                           </tr><tr><td><label>Hosting:</label></td>
-                            <td><input type="text" disabled name="hosting" value="sdfsdf"></td>
+                            <td><input type="text" disabled name="hosting" value="dfgdfg"></td>
                         </tr><tr><td><label>Domain:</label></td>
-                            <td><input type="text" disabled name="domain" value="sdfsdfsdf"></td>
+                            <td><input type="text" disabled name="domain" value="dfgdfgdfg"></td>
                         </tr></tbody><tfoot><tr><td colspan="2">
                                 <center>
                                     <input type="button" disabled name="btnSales" value="Save" onclick="validar();"></center>

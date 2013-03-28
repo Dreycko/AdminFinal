@@ -4,20 +4,52 @@
 		"selected_items":
 		[
 			[
+				"fun",
+				"function"
+			],
+			[
+				"remove",
+				"removeAttribute"
+			],
+			[
+				"inpu",
+				"inputForm"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"dat",
+				"datoClient"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"getELemen",
+				"getElementsByTagName"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
 				"add",
 				"addModule"
 			],
 			[
-				"var",
-				"var"
-			],
-			[
 				"con",
 				"consulta"
-			],
-			[
-				"_",
-				"_SESSION"
 			],
 			[
 				"unse",
@@ -64,10 +96,6 @@
 				"createTextNode"
 			],
 			[
-				"if",
-				"ife	if … else"
-			],
-			[
 				"e",
 				"echo	echo \"…\""
 			],
@@ -77,10 +105,6 @@
 			],
 			[
 				"fo",
-				"form"
-			],
-			[
-				"for",
 				"form"
 			],
 			[
@@ -160,14 +184,6 @@
 				"params"
 			],
 			[
-				"get",
-				"getElementById"
-			],
-			[
-				"inpu",
-				"inputType"
-			],
-			[
 				"sess",
 				"session_start"
 			],
@@ -182,10 +198,6 @@
 			[
 				"le",
 				"length"
-			],
-			[
-				"fun",
-				"function"
 			],
 			[
 				"to",
@@ -236,58 +248,10 @@
 	"buffers":
 	[
 		{
-			"contents": "<?php\narray(16) { \n	[\"company_name\"]=> string(7) \"Company\" \n	[\"icorporation_date\"]=> string(15) \"01-January-1963\" \n	[\"jurisdiction\"]=> string(11) \"Afghanistan\"\n	[\"type_business\"]=> string(8) \"business\" \n	[\"company_address\"]=> string(0) \"\" \n	[\"email\"]=> string(5) \"email\" \n	[\"phone\"]=> string(5) \"phone\" \n	[\"fax\"]=> string(3) \"fax\"\n\n 	[\"position_authorizations\"]=> string(8) \"position\" \n 	[\"full_legal_name_position_authorizations\"]=> string(10) \"legal name\" \n 	[\"email_position_authorizations\"]=> string(5) \"email\" \n 	[\"phone_position_authorizations\"]=> string(5) \"phone\"\n  	[\"position_super_administrator\"]=> string(8) \"position\"\n   	[\"name_super_administrator\"]=> string(4) \"name\" \n   	[\"phone_super_administrator\"]=> string(6) \"phoene\" \n   	[\"email_super_administrator\"]=> string(5) \"email\" }\n?>\n\n\n\nINSERT INTO `adminfinal`.`entity`\n(\n`id_user`,\n`company_name`,\n`incorporation_date`,\n`jurisdiction`,\n`type_business`,\n`company_address`,\n`email`,\n`phone`,\n`fax`,\n`position_authorizations`,\n`name_position_authorizations`,\n`email_position_authorizations`,\n`phone_position_authorizations`,\n`position_super_administrator`,\n`name_super_administrator`,\n`phone_super_administrator`,\n`email_super_administrator`,\n\n`previous_entity`,\n`creation_date`,\n`ip_address`,\n`confirm`)\nVALUES\n(\n\n id_user, \n company_name, \n incorporation_date: 0000-00-00 00:00:00}>,\n jurisdiction, \n type_business, \n company_address, \n email, \n phone, \n fax, \n position_authorizations, \n full_legal_name_position_authorizations, \n email_position_authorizations, \n phone_position_authorizations, \n position_super_administrator, \n name_super_administrator, \n phone_super_administrator, \n email_super_administrator, \n previous_entity, \n creation_date, \n ip_address, \n confirm: \n);\n\n\n\n-- --------------------------------------------------------------------------------\n-- Routine DDL\n-- Note: comments before and after the routine body will not be stored by the server\n-- --------------------------------------------------------------------------------\nDELIMITER $$\n\nCREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insert_cliente`\n(\nid_user int,\ncompany_name varchar(255),\nincorporation_date date,\njurisdiction varchar(255),\ntype_business varchar(255),\ncompany_address varchar(255),\nemail varchar(255),\nphone varchar(255),\nfax varchar(255),\nposition_authorizations varchar(45),\nname_position_authorizations varchar(45),\nemail_position_authorizations varchar(45),\nphone_position_authorizations varchar(45),\nposition_super_administrator varchar(45),\nname_super_administrator varchar(45),\nphone_super_administrator varchar(45),\nemail_super_administrator varchar(45),\nprevious_entity int,\ncreation_date varchar(255),\nip_address varchar(255),\nconfirm varchar(255))\nBEGIN\n\nINSERT INTO `adminfinal`.`entity`\n(\n`id_user`,\n`company_name`,\n`incorporation_date`,\n`jurisdiction`,\n`type_business`,\n`company_address`,\n`email`,\n`phone`,\n`fax`,\n`position_authorizations`,\n`name_position_authorizations`,\n`email_position_authorizations`,\n`phone_position_authorizations`,\n`position_super_administrator`,\n`name_super_administrator`,\n`phone_super_administrator`,\n`email_super_administrator`,\n`previous_entity`,\n`creation_date`,\n`ip_address`,\n`confirm`)\nVALUES\n(\n\n id_user, \n company_name, \n incorporation_date: 0000-00-00 00:00:00}>,\n jurisdiction, \n type_business, \n company_address, \n email, \n phone, \n fax, \n position_authorizations, \n full_legal_name_position_authorizations, \n email_position_authorizations, \n phone_position_authorizations, \n position_super_administrator, \n name_super_administrator, \n phone_super_administrator, \n email_super_administrator, \n previous_entity, \n creation_date, \n ip_address, \n confirm: \n);\n\nEND\n",
-			"settings":
-			{
-				"buffer_size": 3677,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 4227,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "businessLayer/message.php",
-			"settings":
-			{
-				"buffer_size": 741,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/addModule.tpl",
-			"settings":
-			{
-				"buffer_size": 10653,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "businessLayer/addModule.php",
-			"settings":
-			{
-				"buffer_size": 2220,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/reports/all_users_documents.php",
-			"settings":
-			{
-				"buffer_size": 5280,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/components/documents/list.php",
-			"settings":
-			{
-				"buffer_size": 3140,
+				"buffer_size": 4891,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,8 +259,89 @@
 			"file": "dataLayer/gestor.php",
 			"settings":
 			{
-				"buffer_size": 5921,
+				"buffer_size": 8078,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "businessLayer/ClientList.php",
+			"settings":
+			{
+				"buffer_size": 528,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "varios/css/960/layout.css",
+			"settings":
+			{
+				"buffer_size": 8039,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/clientList.tpl",
+			"settings":
+			{
+				"buffer_size": 5002,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "varios/script/clientList.js",
+			"settings":
+			{
+				"buffer_size": 5705,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "varios/css/popup/popup.css",
+			"settings":
+			{
+				"buffer_size": 730,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/message.tpl",
+			"settings":
+			{
+				"buffer_size": 286,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "varios/css/message/message.css",
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "varios/script/message.js",
+			"settings":
+			{
+				"buffer_size": 5439,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "varios/script/newClientSales.js",
+			"settings":
+			{
+				"buffer_size": 2400,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "C:\\Windows.old\\Users\\arleni beitia\\Pictures",
+			"settings":
+			{
+				"buffer_size": 43,
+				"line_ending": "Windows",
+				"name": "C:\\Windows.old\\Users\\arleni beitia\\Pictures"
 			}
 		}
 	],
@@ -371,7 +416,7 @@
 				"Preferences: Key Bindings - User"
 			]
 		],
-		"width": 512.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -388,20 +433,32 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/NFZ/130313/components/system_messages/execute.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/addModule.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/libraries.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/message.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/message.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/newClientSales.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/popbox.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/newClientSales.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/clientList.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/clientList.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/reports/all_users_documents.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/addModule.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/addModule.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/message.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/components/documents/list.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/dataLayer/gestor.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/admin.sublime-project",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/settings/admin_classes/new.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/configuration_docs.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/configuration.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/fromcliente.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/formCliente.tpl",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/addModule.tpl",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/countries.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/utilities.js",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/message.tpl",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/message.js",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/mensaje.tpl",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/css/message/message.css",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/libraries.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/htmlbody/menu.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/simulate.js",
 		"/C/Users/Edwin Toribio/Downloads/simple-lightbox-effect/simple-lightbox-effect/jquery.js",
@@ -503,19 +560,7 @@
 		"/C/Program Files (x86)/Zend/MySQL51/my.ini",
 		"/C/Program Files (x86)/Zend/MySQL51/my-large.ini",
 		"/C/Program Files (x86)/Zend/ZendServer/etc/php.ini",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/dbconnect.inc.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/index.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AMI/public_ami/configuration.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AMI/public_ami/register.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AMI/public_html/register.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/gzip_archivo.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/listar_gzip.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/listar_archivos.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/index.html",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/Binarios/documents_types.sql/documents_types.sql",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/Binarios/documents_types.sql.gz",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/countries.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/smarty/plugins/function.html_select_date.php"
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/dbconnect.inc.php"
 	],
 	"find":
 	{
@@ -542,6 +587,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"sumi",
+			"close",
+			"company name",
+			");\n",
+			"inser",
+			"aler",
+			"entity",
+			"th",
 			"header",
 			"();\n",
 			");\n",
@@ -661,15 +714,7 @@
 			"\\TransferDocument.php",
 			"TransferDocument.php",
 			"\\TransferDocument.php",
-			"/TransferDocument.php",
-			"document.php",
-			"attach_doc",
-			"documen",
-			"view_profile",
-			"updocuments",
-			"attach_doc",
-			"../",
-			"list_prolfile_document.php"
+			"/TransferDocument.php"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -700,7 +745,7 @@
 			"countries",
 			"countrie"
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -709,48 +754,23 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"settings":
-					{
-						"buffer_size": 3677,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3676,
-								3676
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SQL/SQL.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 798.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 4227,
+						"buffer_size": 4891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2168,
+								2168
 							]
 						],
 						"settings":
@@ -760,25 +780,52 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1482.0,
+						"translation.y": 1197.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "businessLayer/message.php",
+					"buffer": 1,
+					"file": "dataLayer/gestor.php",
 					"settings":
 					{
-						"buffer_size": 741,
+						"buffer_size": 8078,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								7851,
+								7851
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5764.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "businessLayer/ClientList.php",
+					"settings":
+					{
+						"buffer_size": 528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
 							]
 						],
 						"settings":
@@ -794,80 +841,105 @@
 				},
 				{
 					"buffer": 3,
-					"file": "templates/addModule.tpl",
+					"file": "varios/css/960/layout.css",
 					"settings":
 					{
-						"buffer_size": 10653,
+						"buffer_size": 8039,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8039,
+								8039
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 9520.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "businessLayer/addModule.php",
+					"file": "templates/clientList.tpl",
 					"settings":
 					{
-						"buffer_size": 2220,
+						"buffer_size": 5002,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1779,
+								1779
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 627.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/reports/all_users_documents.php",
+					"file": "varios/script/clientList.js",
 					"settings":
 					{
-						"buffer_size": 5280,
+						"buffer_size": 5705,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1064,
-								1034
+								5583,
+								5583
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5150.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "varios/css/popup/popup.css",
+					"settings":
+					{
+						"buffer_size": 730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -876,38 +948,38 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/components/documents/list.php",
+					"buffer": 7,
+					"file": "templates/message.tpl",
 					"settings":
 					{
-						"buffer_size": 3140,
+						"buffer_size": 286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2695,
-								2695
+								218,
+								218
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1539.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "dataLayer/gestor.php",
+					"buffer": 8,
+					"file": "varios/css/message/message.css",
 					"settings":
 					{
-						"buffer_size": 5921,
+						"buffer_size": 733,
 						"regions":
 						{
 						},
@@ -920,11 +992,91 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 342.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "varios/script/message.js",
+					"settings":
+					{
+						"buffer_size": 5439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5422,
+								5426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "varios/script/newClientSales.js",
+					"settings":
+					{
+						"buffer_size": 2400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1442,
+								1442
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"auto_name": "C:\\Windows.old\\Users\\arleni beitia\\Pictures",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -992,6 +1144,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 139.0,
+	"side_bar_width": 180.0,
 	"status_bar_visible": true
 }

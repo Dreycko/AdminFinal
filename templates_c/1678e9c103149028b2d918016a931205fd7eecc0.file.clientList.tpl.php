@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-03-28 10:04:47
+<?php /* Smarty version Smarty-3.1.12, created on 2013-04-01 12:50:04
          compiled from "templates\clientList.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:41685136031e262197-85395505%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1678e9c103149028b2d918016a931205fd7eecc0' => 
     array (
       0 => 'templates\\clientList.tpl',
-      1 => 1364479483,
+      1 => 1364835000,
       2 => 'file',
     ),
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'libraries' => 0,
+    'pag' => 0,
     'count' => 0,
     'menu' => 0,
     'foo' => 0,
@@ -42,7 +43,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<?php echo $_smarty_tpl->tpl_vars['libraries']->value;?>
 
 </head>
-<body onload="pag(0);" class="main-box">
+<body onload=<?php echo $_smarty_tpl->tpl_vars['pag']->value;?>
+ class="main-box">
 	cantidad:<?php echo $_smarty_tpl->tpl_vars['count']->value;?>
 
 	<div class = "container_12">
@@ -170,7 +172,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 			<td>
 				
 				<label for="code">CODE:</label>
-				<input type="text" id="code" name="code" >
+				<input type="text" id="code" name="code" readonly >
 			</td>
 			<td >
 				<label for="company_name">Company Name:</label>
@@ -228,7 +230,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 				<button name="btnSave" onclick=" saveForm();" value="save">save</button>
 			</td>
 			<td >
-				<button name="btnExit" onclick=" exit();">cancel</button>
+				<input type='Button' onclick='exit();' value="Cancelar">
 			</td></tr>
 
 		</table>

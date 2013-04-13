@@ -4,20 +4,32 @@
 		"selected_items":
 		[
 			[
+				"inpu",
+				"input"
+			],
+			[
+				"cre",
+				"createElement"
+			],
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"ta",
+				"getElementsByTagName"
+			],
+			[
+				"sub",
+				"substr"
+			],
+			[
 				"fun",
 				"function"
 			],
 			[
 				"remove",
 				"removeAttribute"
-			],
-			[
-				"inpu",
-				"inputForm"
-			],
-			[
-				"get",
-				"getElementsByTagName"
 			],
 			[
 				"for",
@@ -248,42 +260,42 @@
 	"buffers":
 	[
 		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 4891,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "dataLayer/gestor.php",
 			"settings":
 			{
-				"buffer_size": 8078,
+				"buffer_size": 8278,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "businessLayer/ClientList.php",
+			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 528,
+				"buffer_size": 5023,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "varios/css/960/layout.css",
+			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130325/registro.csv",
 			"settings":
 			{
-				"buffer_size": 8039,
+				"buffer_size": 9526,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/clientList.tpl",
+			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130325/configuration.php",
 			"settings":
 			{
-				"buffer_size": 5002,
+				"buffer_size": 1343,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/newClientSales2.tpl",
+			"settings":
+			{
+				"buffer_size": 15430,
 				"line_ending": "Windows"
 			}
 		},
@@ -291,39 +303,39 @@
 			"file": "varios/script/clientList.js",
 			"settings":
 			{
-				"buffer_size": 5705,
+				"buffer_size": 6258,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "varios/css/popup/popup.css",
+			"file": "varios/css/960/layout.css",
 			"settings":
 			{
-				"buffer_size": 730,
+				"buffer_size": 8104,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/message.tpl",
+			"file": "businessLayer/ClientList.php",
 			"settings":
 			{
-				"buffer_size": 286,
+				"buffer_size": 1397,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "varios/css/message/message.css",
+			"file": "businessLayer/newClientSales.php",
 			"settings":
 			{
-				"buffer_size": 733,
+				"buffer_size": 3070,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "varios/script/message.js",
+			"file": "templates/newClientSales.tpl",
 			"settings":
 			{
-				"buffer_size": 5439,
+				"buffer_size": 19924,
 				"line_ending": "Windows"
 			}
 		},
@@ -336,12 +348,35 @@
 			}
 		},
 		{
-			"contents": "C:\\Windows.old\\Users\\arleni beitia\\Pictures",
+			"contents": "DROP TRIGGER IF EXISTS scapeChar;\nDELIMITER //\nCREATE TRIGGER scapeChar\n    BEFORE UPDATE ON `lang_define` FOR EACH ROW\n    BEGIN\n         #Portuguese, verifica si contiene comillas\n       \n\n        IF INSTR(NEW.Portuguese, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Portuguese, INSTR(NEW.Portuguese, '\\'')-1,1)) != '\\\\'then\n                set NEW.Portuguese = CONCAT(SUBSTRING(NEW.Portuguese,1,INSTR(NEW.Portuguese, '\\'')-1),'\\\\',SUBSTRING(NEW.Portuguese,INSTR(NEW.Portuguese, '\\''),CHAR_LENGTH(NEW.Portuguese)));\n                else\n                set NEW.Portuguese = NEW.Portuguese;\n            end if;\n        \n        else\n        set NEW.Portuguese = NEW.Portuguese;\n       \n        \n        end \n        #SerboCroatian, verifica si contiene comillas\n        IF INSTR(NEW.SerboCroatian, '\\'') > 0 then\n\n\n            if  (SUBSTRING(NEW.SerboCroatian, INSTR(NEW.SerboCroatian, '\\'')-1,1)) != '\\\\'then\n                set NEW.SerboCroatian = CONCAT(SUBSTRING(NEW.SerboCroatian,1,INSTR(NEW.SerboCroatian, '\\'')-1),'\\\\',SUBSTRING(NEW.SerboCroatian,INSTR(NEW.SerboCroatian, '\\''),CHAR_LENGTH(NEW.SerboCroatian)));\n                else\n                set NEW.SerboCroatian = NEW.SerboCroatian;\n            end if;\n        \n        else\n        set NEW.SerboCroatian = NEW.SerboCroatian;\n        END IF;\n\n        #Nederlands, verifica si contiene comillas\n        IF INSTR(NEW.Nederlands, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Nederlands, INSTR(NEW.Nederlands, '\\'')-1,1)) != '\\\\'then\n                set NEW.Nederlands = CONCAT(SUBSTRING(NEW.Nederlands,1,INSTR(NEW.Nederlands, '\\'')-1),'\\\\',SUBSTRING(NEW.Nederlands,INSTR(NEW.Nederlands, '\\''),CHAR_LENGTH(NEW.Nederlands)));\n                else\n                set NEW.Nederlands = NEW.Nederlands;\n            end if;\n        \n        else\n        set NEW.Nederlands = NEW.Nederlands;\n        END IF;\n\n        #Czech, verifica si contiene comillas\n        IF INSTR(NEW.Czech, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Czech, INSTR(NEW.Czech, '\\'')-1,1)) != '\\\\'then\n                set NEW.Czech = CONCAT(SUBSTRING(NEW.Czech,1,INSTR(NEW.Czech, '\\'')-1),'\\\\',SUBSTRING(NEW.Czech,INSTR(NEW.Czech, '\\''),CHAR_LENGTH(NEW.Czech)));\n                else\n                set NEW.Czech = NEW.Czech;\n            end if;\n        \n        else\n        set NEW.Czech = NEW.Czech;\n        END IF;\n\n\n        #Italiano, verifica si contiene comillas\n        IF INSTR(NEW.Italiano, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Italiano, INSTR(NEW.Italiano, '\\'')-1,1)) != '\\\\'then\n                set NEW.Italiano = CONCAT(SUBSTRING(NEW.Italiano,1,INSTR(NEW.Italiano, '\\'')-1),'\\\\',SUBSTRING(NEW.Italiano,INSTR(NEW.Italiano, '\\''),CHAR_LENGTH(NEW.Italiano)));\n                else\n                set NEW.Italiano = NEW.Italiano;\n            end if;\n        \n        else\n        set NEW.Italiano = NEW.Italiano;\n        END IF;\n        \n        #Chinese, verifica si contiene comillas\n        IF INSTR(NEW.Chinese, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Chinese, INSTR(NEW.Chinese, '\\'')-1,1)) != '\\\\'then\n                set NEW.Chinese = CONCAT(SUBSTRING(NEW.Chinese,1,INSTR(NEW.Chinese, '\\'')-1),'\\\\',SUBSTRING(NEW.Chinese,INSTR(NEW.Chinese, '\\''),CHAR_LENGTH(NEW.Chinese)));\n                else\n                set NEW.Chinese = NEW.Chinese;\n            end if;\n        \n        else\n        set NEW.Chinese = NEW.Chinese;\n        END IF;\n\n         #Japanese, verifica si contiene comillas\n        IF INSTR(NEW.Japanese, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Japanese, INSTR(NEW.Japanese, '\\'')-1,1)) != '\\\\'then\n                set NEW.Japanese = CONCAT(SUBSTRING(NEW.Japanese,1,INSTR(NEW.Japanese, '\\'')-1),'\\\\',SUBSTRING(NEW.Japanese,INSTR(NEW.Japanese, '\\''),CHAR_LENGTH(NEW.Japanese)));\n                else\n                set NEW.Japanese = NEW.Japanese;\n            end if;\n        \n        else\n        set NEW.Japanese = NEW.Japanese;\n        END IF;\n        \n        #Turkish, verifica si contiene comillas\n        IF INSTR(NEW.Turkish, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Turkish, INSTR(NEW.Turkish, '\\'')-1,1)) != '\\\\'then\n                set NEW.Turkish = CONCAT(SUBSTRING(NEW.Turkish,1,INSTR(NEW.Turkish, '\\'')-1),'\\\\',SUBSTRING(NEW.Turkish,INSTR(NEW.Turkish, '\\''),CHAR_LENGTH(NEW.Turkish)));\n                else\n                set NEW.Turkish = NEW.Turkish;\n            end if;\n        \n        else\n        set NEW.Turkish = NEW.Turkish;\n        END IF;\n\n        #Russian, verifica si contiene comillas\n        IF INSTR(NEW.Russian, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Russian, INSTR(NEW.Russian, '\\'')-1,1)) != '\\\\'then\n                set NEW.Russian = CONCAT(SUBSTRING(NEW.Russian,1,INSTR(NEW.Russian, '\\'')-1),'\\\\',SUBSTRING(NEW.Russian,INSTR(NEW.Russian, '\\''),CHAR_LENGTH(NEW.Russian)));\n                else\n                set NEW.Russian = NEW.Russian;\n            end if;\n        \n        else\n        set NEW.Russian = NEW.Russian;\n        END IF;\n\n        #Swedish, verifica si contiene comillas\n        IF INSTR(NEW.Swedish, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Swedish, INSTR(NEW.Swedish, '\\'')-1,1)) != '\\\\'then\n                set NEW.Swedish = CONCAT(SUBSTRING(NEW.Swedish,1,INSTR(NEW.Swedish, '\\'')-1),'\\\\',SUBSTRING(NEW.Swedish,INSTR(NEW.Swedish, '\\''),CHAR_LENGTH(NEW.Swedish)));\n                else\n                set NEW.Swedish = NEW.Swedish;\n            end if;\n        \n        else\n        set NEW.Swedish = NEW.Swedish;\n        END IF;\n\n\n        #German, verifica si contiene comillas\n        IF INSTR(NEW.German, '\\'') > 0 then\n            if  (SUBSTRING(NEW.German, INSTR(NEW.German, '\\'')-1,1)) != '\\\\'then\n                set NEW.German = CONCAT(SUBSTRING(NEW.German,1,INSTR(NEW.German, '\\'')-1),'\\\\',SUBSTRING(NEW.German,INSTR(NEW.German, '\\''),CHAR_LENGTH(NEW.German)));\n                else\n                set NEW.German = NEW.German;\n            end if;\n        \n        else\n        set NEW.German = NEW.German;\n        END IF;\n        \n        #Spanish, verifica si contiene comillas\n        IF INSTR(NEW.Spanish, '\\'') > 0 then\n            if  (SUBSTRING(NEW.Spanish, INSTR(NEW.Spanish, '\\'')-1,1)) != '\\\\'then\n                set NEW.Spanish = CONCAT(SUBSTRING(NEW.Spanish,1,INSTR(NEW.Spanish, '\\'')-1),'\\\\',SUBSTRING(NEW.Spanish,INSTR(NEW.Spanish, '\\''),CHAR_LENGTH(NEW.Spanish)));\n                else\n                set NEW.Spanish = NEW.Spanish;\n            end if;\n        \n        else\n        set NEW.Spanish = NEW.Spanish;\n        END IF;\n\n        #French, verifica si contiene comillas\n        IF INSTR(NEW.French, '\\'') > 0 then\n            if  (SUBSTRING(NEW.French, INSTR(NEW.French, '\\'')-1,1)) != '\\\\'then\n                set NEW.French = CONCAT(SUBSTRING(NEW.French,1,INSTR(NEW.French, '\\'')-1),'\\\\',SUBSTRING(NEW.French,INSTR(NEW.French, '\\''),CHAR_LENGTH(NEW.French)));\n                else\n                set NEW.French = NEW.French;\n            end if;\n        \n        else\n        set NEW.French = NEW.French;\n        END IF;\n\n        #English, verifica si contiene comillas\n        IF INSTR(NEW.English, '\\'') > 0 then\n            if  (SUBSTRING(NEW.English, INSTR(NEW.English, '\\'')-1,1)) != '\\\\'then\n                set NEW.English = CONCAT(SUBSTRING(NEW.English,1,INSTR(NEW.English, '\\'')-1),'\\\\',SUBSTRING(NEW.English,INSTR(NEW.English, '\\''),CHAR_LENGTH(NEW.English)));\n                else\n                set NEW.English = NEW.English;\n            end if;\n        \n        else\n        set NEW.English = NEW.English;\n        END IF;\n        \n        \n    END//\nDELIMITER ;",
 			"settings":
 			{
-				"buffer_size": 43,
-				"line_ending": "Windows",
-				"name": "C:\\Windows.old\\Users\\arleni beitia\\Pictures"
+				"buffer_size": 7570,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "DROP TRIGGER IF EXISTS scapeChar;\nDELIMITER //\nCREATE TRIGGER scapeChar\n    BEFORE UPDATE ON `lang_define` FOR EACH ROW\n    BEGIN\n       \n        #Ingles, verifica si contiene comillas\n      \n         #creo una variable para que indique desde donde se validara la cadena \n        DECLARE EnglishLength INT Default 1 ;\n        DECLARE strEnglish char(250) Default NEW.English;\n         #verifica si en primera instancia se encuentra una comilla\n       IF INSTR(NEW.English, '\\'') > 0 then\n       #inicia el loop para poder verificar en toda la cadena si contiene mas de una comilla    \n       char_length:loop\n       #pregunta si en el substring hay una comilla, (se pregunta denuevo ya que el loop incrementara la posicion inicial del string a validadr)\n       IF INSTR(SUBSTRING(strEnglish, EnglishLength,CHAR_LENGTH(NEW.English)), '\\'') > 0 then\n           #verificamos si ya no continene un una barra invertidad antes de la comilla\n           if  (SUBSTRING(strEnglish, INSTR(SUBSTRING(strEnglish, EnglishLength,CHAR_LENGTH(NEW.English)),'\\\\')-1,1)) != '\\\\'then\n                #asignamos un barra invertida antes de la comilla\n                set strEnglish = CONCAT(SUBSTRING(strEnglish,1,INSTR(SUBSTRING(strEnglish, EnglishLength,CHAR_LENGTH(NEW.English)),'\\\\')-1),'\\\\',SUBSTRING(strEnglish,INSTR(NEW.English, '\\''),CHAR_LENGTH(NEW.English)));\n                else\n                #dejamos el string como esta\n                set strEnglish = strEnglish;\n               \n            end if;\n             #cambiamos el valor donde se inicia la verificaion del string\n             set EnglishLength = INSTR(SUBSTRING(strEnglish, EnglishLength,CHAR_LENGTH(NEW.English)),'\\\\');\n        else\n        #termina el loop si no encuentra comillas\n             LEAVE char_length ;\n        end if;\n        end loop;\n        #asigna el nuevo valor a insertar\n        set NEW.English = strEnglish;\n        else\n        #si no encontro una comilla en primera instancia se inserta igual \n        set NEW.English = NEW.English;\n       \n        END IF;\n        \n              \n        \n    END//\nDELIMITER ;",
+			"settings":
+			{
+				"buffer_size": 2095,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130408/configuration.php",
+			"settings":
+			{
+				"buffer_size": 1342,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/SC/130312/configuration.php",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -416,7 +451,7 @@
 				"Preferences: Key Bindings - User"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -433,16 +468,26 @@
 	},
 	"file_history":
 	[
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EFS/130406/configuration.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/newClientSales.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/newClientSales.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130325/registro.csv",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130325/configuration.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/newClientSales2.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/clientList.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/css/960/layout.css",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/ClientList.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/clientList.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/index.php",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/message.js",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/message.tpl",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/css/popup/popup.css",
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/css/message/message.css",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/NFZ/130313/components/system_messages/execute.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/addModule.js",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/libraries.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/message.tpl",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/message.js",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/newClientSales.tpl",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/popbox.js",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/newClientSales.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/clientList.js",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/clientList.tpl",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130207/content/admin/reports/all_users_documents.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/addModule.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/addModule.tpl",
@@ -458,7 +503,6 @@
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/businessLayer/countries.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/utilities.js",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/templates/mensaje.tpl",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/css/message/message.css",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/htmlbody/menu.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/varios/script/simulate.js",
 		"/C/Users/Edwin Toribio/Downloads/simple-lightbox-effect/simple-lightbox-effect/jquery.js",
@@ -551,16 +595,7 @@
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/templates/login.tpl",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/data/gestor.php",
 		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/index.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/include.php",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/templates/hola.tpl",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/130122/epan1_nexorone.sql",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/guardar_archivo.php",
-		"/C/Program Files (x86)/Zend/phpMyAdmin/tbl_replace.php",
-		"/C/Program Files (x86)/Zend/MySQL51/my-huge.ini",
-		"/C/Program Files (x86)/Zend/MySQL51/my.ini",
-		"/C/Program Files (x86)/Zend/MySQL51/my-large.ini",
-		"/C/Program Files (x86)/Zend/ZendServer/etc/php.ini",
-		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/dbconnect.inc.php"
+		"/C/Program Files (x86)/Zend/Apache2/htdocs/EPA-Document/include.php"
 	],
 	"find":
 	{
@@ -587,6 +622,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Spanish",
+			"German",
+			"Swedish",
+			"Russian",
+			"Turkish",
+			"Japanese",
+			"English",
+			"French",
+			"Spanish",
+			"German",
+			"English",
+			"French",
+			"English",
+			"SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n    SELECT IF(@cha = '\\\\',\n    @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)), @str:= @str);",
+			"     @",
+			"SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n    SELECT IF(@cha = '\\\\',\n    @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)), @str:= @str);",
+			"    SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n    SELECT IF(@cha = '\\\\',\n    @str:= @str , @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)));",
+			"    SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n    SELECT IF(@cha = '\\\\',\n     @str:= @str , @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)));",
+			"  SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n    SELECT IF(@cha = '\\\\',\n     @str:= @str , @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)));\n    UPDATE lang_define SET\n    English = @str\n    where id_Define = id;\n    ",
+			"@str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)), @str:= @str);",
+			" @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)), @str:= @str);",
+			"IF(@cha != ",
+			" @str:= @str, @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)));",
+			"IF(@cha =",
+			"full",
+			"validar",
+			"save",
+			"handled",
+			"clientList",
+			"[\"",
 			"sumi",
 			"close",
 			"company name",
@@ -684,37 +749,7 @@
 			"scrip",
 			"page",
 			"search_profile",
-			"consultar",
-			"andmin",
-			"Document:",
-			"consultarDoc",
-			"					",
-			"delete_doc.php",
-			"delete_doc",
-			"delete_doc.php",
-			"mod_data",
-			"POST",
-			"up_date",
-			"new_document",
-			"messages",
-			"document.alert",
-			"alert",
-			"elseif",
-			"elseif\"",
-			"elseis",
-			"elseis\"",
-			"upload",
-			"var_dump",
-			"'upload'",
-			"document.php",
-			"attach_doc",
-			";\n",
-			"\\TransferDocument.php",
-			"TransferDocument.php",
-			"\\TransferDocument.php",
-			"TransferDocument.php",
-			"\\TransferDocument.php",
-			"/TransferDocument.php"
+			"consultar"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -722,6 +757,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			".",
+			"if  @ind >1 then \n    SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n     IF @cha != '\\\\' THEN\n     set @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng));\n     END IF;\n     \n    END IF;",
+			"if  @ind >1 then \n    SELECT @cha:=SUBSTRING(@str, @ind, 1);\n    select @leng:= CHARACTER_LENGTH(@str);\n     IF @cha != '\\\\' THEN\n     set @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng));\n     END IF;\n     \n    END IF;\n    UPDATE lang_define SET\n    Chinese = @str\n    where id_Define = id;",
+			"@str:= @str , @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)));",
+			"IF(@cha = ",
+			" @str:= CONCAT(SUBSTRING(@str,1, @ind),'\\\\\\'',SUBSTRING(@str,(@ind+2), @leng)), @str:= @str);",
+			"IF(@cha !=",
 			", ",
 			" ",
 			"'",
@@ -754,23 +796,50 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": "dataLayer/gestor.php",
 					"settings":
 					{
-						"buffer_size": 4891,
+						"buffer_size": 8278,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2168,
-								2168
+								6091,
+								6091
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1066.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 5023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4256,
+								4256
 							]
 						],
 						"settings":
@@ -780,58 +849,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1197.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "dataLayer/gestor.php",
-					"settings":
-					{
-						"buffer_size": 8078,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								7851,
-								7851
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 5764.0,
+						"translation.y": 2993.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "businessLayer/ClientList.php",
+					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130325/registro.csv",
 					"settings":
 					{
-						"buffer_size": 528,
+						"buffer_size": 9526,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								162,
-								162
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -841,54 +882,54 @@
 				},
 				{
 					"buffer": 3,
-					"file": "varios/css/960/layout.css",
+					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130325/configuration.php",
 					"settings":
 					{
-						"buffer_size": 8039,
+						"buffer_size": 1343,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8039,
-								8039
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 9520.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "templates/clientList.tpl",
+					"file": "templates/newClientSales2.tpl",
 					"settings":
 					{
-						"buffer_size": 5002,
+						"buffer_size": 15430,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1779,
-								1779
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 627.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -898,15 +939,15 @@
 					"file": "varios/script/clientList.js",
 					"settings":
 					{
-						"buffer_size": 5705,
+						"buffer_size": 6258,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5583,
-								5583
+								0,
+								0
 							]
 						],
 						"settings":
@@ -915,71 +956,17 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5150.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "varios/css/popup/popup.css",
+					"file": "varios/css/960/layout.css",
 					"settings":
 					{
-						"buffer_size": 730,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35,
-								27
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "templates/message.tpl",
-					"settings":
-					{
-						"buffer_size": 286,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								218,
-								218
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "varios/css/message/message.css",
-					"settings":
-					{
-						"buffer_size": 733,
+						"buffer_size": 8104,
 						"regions":
 						{
 						},
@@ -1002,28 +989,83 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "varios/script/message.js",
+					"buffer": 7,
+					"file": "businessLayer/ClientList.php",
 					"settings":
 					{
-						"buffer_size": 5439,
+						"buffer_size": 1397,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5422,
-								5426
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3126.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "businessLayer/newClientSales.php",
+					"settings":
+					{
+						"buffer_size": 3070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "templates/newClientSales.tpl",
+					"settings":
+					{
+						"buffer_size": 19924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16847,
+								16847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 532.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1040,8 +1082,8 @@
 						"selection":
 						[
 							[
-								1442,
-								1442
+								146,
+								146
 							]
 						],
 						"settings":
@@ -1050,7 +1092,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1482.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1059,21 +1101,101 @@
 					"buffer": 11,
 					"settings":
 					{
-						"buffer_size": 43,
+						"buffer_size": 7570,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								43,
-								43
+								129,
+								129
 							]
 						],
 						"settings":
 						{
-							"auto_name": "C:\\Windows.old\\Users\\arleni beitia\\Pictures",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"settings":
+					{
+						"buffer_size": 2095,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2095,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/EPA/130408/configuration.php",
+					"settings":
+					{
+						"buffer_size": 1342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/C/Program Files (x86)/Zend/Apache2/htdocs/SC/130312/configuration.php",
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1135,7 +1257,7 @@
 		[
 			[
 				"",
-				"/C/Users/Edwin Toribio/Desktop/AdminCLient.sublime-project"
+				"/C/Program Files (x86)/Zend/Apache2/htdocs/AdminFinal/admin.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1144,6 +1266,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 180.0,
+	"side_bar_width": 99.0,
 	"status_bar_visible": true
 }

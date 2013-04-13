@@ -335,6 +335,18 @@ class gestor
 
 	}
 
+		function clientListEdit($consulta)
+	{
+
+		//var_dump($_SESSION);
+		//exit();
+		$this-> conectar();
+		$entity = $this->realizarOperacion($consulta);
+		$this-> cerrarConexion();
+		return $entity;
+
+	}
+
 
 
 

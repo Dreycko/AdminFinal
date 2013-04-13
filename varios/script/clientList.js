@@ -287,16 +287,39 @@ function actualizar(idrow)
 	function exit()
 	{
 		$("#main-box, #form").fadeOut(500);
+		return false;
 	}
 
 	function saveForm()
 	{
 
 
-
-		document.formSave.submit();
+		
+		var btns = document.getElementsByTagName("button");
+		var btnseleted = "";
+		//alert(btns.length);
+		for (var i = 0; i < btns.length; i++) 
+		{
+			//alert(btns[i].getAttribute("style"));
+			if(/background-color:lightblue/.test(btns[i].getAttribute("style")))
+			{
+				btnseleted = btns[i].name;
+			};
+		};
+		if (btnseleted =="")
+		{
+			btnseleted ="0";
+		};
+		var	input = document.createElement("input");
+		input.name="btnseleted";
+		input.value = btnseleted;
+		formSave.appendChild(input);
+		//alert("test");
 		$("#main-box, #form").fadeOut(500);
+		document.formSave.submit();
 
+		
+		//return false;
 
 	}
 

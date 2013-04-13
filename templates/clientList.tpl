@@ -11,7 +11,7 @@
 
 	{$libraries}
 </head>
-<body onload="pag(0);" class="main-box">
+<body onload={$pag} class="main-box">
 	cantidad:{$count}
 	<div class = "container_12">
 		
@@ -124,7 +124,7 @@
 			<td>
 				
 				<label for="code">CODE:</label>
-				<input type="text" id="code" name="code" >
+				<input type="text" id="code" name="code" readonly >
 			</td>
 			<td >
 				<label for="company_name">Company Name:</label>
@@ -182,7 +182,7 @@
 				<button name="btnSave" onclick=" saveForm();" value="save">save</button>
 			</td>
 			<td >
-				<button name="btnExit" onclick=" exit();">cancel</button>
+				<input type='Button' onclick='exit();' value="Cancelar">
 			</td></tr>
 
 		</table>

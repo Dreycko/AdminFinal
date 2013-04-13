@@ -243,24 +243,28 @@ ul.section li.current > a.active:hover {
 
 /* table
 ----------------------------------------------- */
-table {
+table 
+{
 	width:100%;
 	border:1px solid #bbb;
 	margin-bottom:10px;
 }
-col.colC {
+col.colC 
+{
 	width:8em;
 }
 th, td {
 	padding:.2em 1em;
 	text-align:left;
 }
-thead th {
+thead th 
+{
 	border-bottom:2px solid #888;
 	background:#bbb;
 	padding:.4em 1em .2em;
 }
-thead th.table-head {
+thead th.table-head 
+{
 	font-size:1em;
 	font-weight:normal;
 	text-transform:uppercase;
@@ -269,31 +273,47 @@ thead th.table-head {
 	border:1px solid #555;
 }
 tbody th,
-tbody td {
+tbody td 
+{
 	border-top:1px solid #bbb;
 	border-bottom:1px solid #bbb;
 	background:#eee;
 }
 tbody tr.odd th,
-tbody tr.odd td {
+tbody tr.odd td 
+{
 	background:#fff;
 }
+#active tbody td:hover 
+{
+	color: white;
+	background: gray;
+}
 tfoot th,
-tfoot td {
+tfoot td 
+{
 	border-top:2px solid #666;
 	background:#eee;
 }
 tfoot tr.total th,
-tfoot tr.total td {
+tfoot tr.total td
+{
 	border-top:6px double #666;
 }
-tfoot tr.total th {
+tfoot tr.total th 
+{
 	text-transform:uppercase;
 }
 th.currency,
-td.currency {
+td.currency 
+{
 	text-align:right;
 }
+
+
+
+/*#active tbody tr:hover { background: #fcf; }*/
+
 
 
 /* forms
@@ -520,7 +540,4 @@ input.search.button {
 }
 
 
-/*hover de las tablas*/
-#active tbody tr:hover { background: #FCF; }
-/*#active tbody tr:hover { background: #fcf; }*/
 

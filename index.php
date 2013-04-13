@@ -99,6 +99,17 @@ if ($_SESSION['isLogin'])
  //exit();
  $smarty->assign('dato',$datoClient);
  $smarty->assign('count',$conut);
+ if ($_GET["page"]) 
+ {
+   $smarty->assign('pag',"pag(".$_GET["page"].");");
+
+ }
+ else
+
+ {
+   $smarty->assign('pag',"pag(0);");
+
+ }
  unset($_SESSION["msgEntity"]);
  $call->display('clientList.tpl');
  break;

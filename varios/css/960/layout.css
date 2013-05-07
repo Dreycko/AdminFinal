@@ -284,11 +284,17 @@ tbody tr.odd td
 {
 	background:#fff;
 }
-#active tbody td:hover 
+#active tbody #tdcompany_name_label:hover
 {
 	color: white;
 	background: gray;
 }
+#active tbody  #tdcode_label:hover
+{
+	color: white;
+	background: gray;
+}
+
 tfoot th,
 tfoot td 
 {

@@ -60,11 +60,24 @@
                           </tr>
                           <tr>
                             <td><label>Hosting:</label></td>
-                            <td><input type="text" disabled name="hosting"></td>
+                            <td>
+                                <input type="text" disabled name="hosting">
+                                <select name="seltecthosting" id="seltecthosting">
+                                    <option value="Internal">Internal</option>
+                                    <option value="External">External</option>
+                                    <option value="Unknown">Unknown</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td><label>Domain:</label></td>
-                            <td><input type="text" disabled name="domain"></td>
+                            <td>
+                                <input type="text" disabled name="domain">
+                                <select name="seltecthosting" id="seltecthosting">
+                                    <option value="Acquire">Acquire</option>
+                                    <option value="Existing">Existing</option>
+                                </select>
+                            </td>
                         </tr>
 
                     </tbody>

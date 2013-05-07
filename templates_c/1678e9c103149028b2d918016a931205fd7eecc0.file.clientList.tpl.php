@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-04-01 12:50:04
+<?php /* Smarty version Smarty-3.1.12, created on 2013-04-19 16:03:49
          compiled from "templates\clientList.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:41685136031e262197-85395505%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1678e9c103149028b2d918016a931205fd7eecc0' => 
     array (
       0 => 'templates\\clientList.tpl',
-      1 => 1364835000,
+      1 => 1366401557,
       2 => 'file',
     ),
   ),
@@ -63,7 +63,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			</colgroup>
 			<thead>
 				<tr>
-					<th colspan="11" class="table-head">Active</th>
+					<th colspan="12" class="table-head">Active</th>
 				</tr>
 				<tr>
 					<th>DOP</th>
@@ -77,6 +77,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<th>Integration</th>
 					<th>Started</th>
 					<th class="currency">Paid Until</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -85,13 +86,14 @@ if ($_smarty_tpl->tpl_vars['foo']->total > 0){
 for ($_smarty_tpl->tpl_vars['foo']->value = 0, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++){
 $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration == 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration == $_smarty_tpl->tpl_vars['foo']->total;?>
 				<tr  id ="<?php echo $_smarty_tpl->tpl_vars['foo']->value;?>
-"class="odd" style="display:none" onClick="actualizar(<?php echo $_smarty_tpl->tpl_vars['foo']->value;?>
-);">
+"class="odd" style="display:none">
 					<td><label id="DOP"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][2];?>
 </label></td>
-					<td><label id="code_label"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][3];?>
+					<td id = "tdcode_label" onClick="actualizarIT(<?php echo $_smarty_tpl->tpl_vars['foo']->value;?>
+);"><label id="code_label"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][3];?>
 </label></td>
-					<td><label id="company_name_label"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][1];?>
+					<td id="tdcompany_name_label" onClick="actualizarVentas(<?php echo $_smarty_tpl->tpl_vars['foo']->value;?>
+);"><label id="company_name_label"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][1];?>
 </label></td>
 					<td><label id="contact_label"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][4];?>
 </label></td>
@@ -106,6 +108,7 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 					<td><label id="starte_label"><?php echo $_smarty_tpl->tpl_vars['dato']->value[$_smarty_tpl->tpl_vars['foo']->value][0];?>
 </label></td>
 					<td class="currency"><label id="paid_label">$125.00</label></td>
+					<td><label>borrar</label></td>
 				</tr>
 				<?php }} ?>
 

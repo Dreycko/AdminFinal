@@ -28,7 +28,7 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th colspan="11" class="table-head">Active</th>
+					<th colspan="12" class="table-head">Active</th>
 				</tr>
 				<tr>
 					<th>DOP</th>
@@ -42,14 +42,15 @@
 					<th>Integration</th>
 					<th>Started</th>
 					<th class="currency">Paid Until</th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
 				{for $foo=0 to $count-1}
-				<tr  id ="{$foo}"class="odd" style="display:none" onClick="actualizar({$foo});">
+				<tr  id ="{$foo}"class="odd" style="display:none">
 					<td><label id="DOP">{$dato[$foo][2]}</label></td>
-					<td><label id="code_label">{$dato[$foo][3]}</label></td>
-					<td><label id="company_name_label">{$dato[$foo][1]}</label></td>
+					<td id = "tdcode_label" onClick="actualizarIT({$foo});"><label id="code_label">{$dato[$foo][3]}</label></td>
+					<td id="tdcompany_name_label" onClick="actualizarVentas({$foo});"><label id="company_name_label">{$dato[$foo][1]}</label></td>
 					<td><label id="contact_label">{$dato[$foo][4]}</label></td>
 					<td><label id="type_label">Lorem ipsum</label></td>
 					<td><label id="package_label">{$dato[$foo][5]}</label></td>
@@ -58,6 +59,7 @@
 					<td><label id="integration_label">Lorem ipsum</label></td>
 					<td><label id="starte_label">{$dato[$foo][0]}</label></td>
 					<td class="currency"><label id="paid_label">$125.00</label></td>
+					<td><label>borrar</label></td>
 				</tr>
 				{/for}
 

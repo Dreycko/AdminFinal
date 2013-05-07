@@ -249,9 +249,14 @@ function go ()
 function isNumber(n) {
 	return !isNaN(parseFloat(n)) && isFinite(n);
 }
-function actualizar(idrow)
+function actualizarIT(idrow)
 {
-		//alert(idrow);
+	alert("IT");
+
+}
+function actualizarVentas(idrow)
+{
+	
 		var row = document.getElementById(idrow);
 		var	labels = row.getElementsByTagName("label");
 		var divForm = document.getElementById("form");
@@ -264,23 +269,7 @@ function actualizar(idrow)
 
 		};
 
-		//divForm.removeAttribute("style");
-
-
 		$("#main-box, #form").fadeIn(500);
-
-
-
-	/*
-
-		else
-		{
-			$("form").fadeOut(1000);
-			window.location=(page+".php");
-
-		};
-
-		*/
 
 	}
 

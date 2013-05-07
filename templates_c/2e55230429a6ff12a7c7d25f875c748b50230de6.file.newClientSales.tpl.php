@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-03-22 11:25:58
+<?php /* Smarty version Smarty-3.1.12, created on 2013-04-19 12:22:45
          compiled from "templates\newClientSales.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5675135294fbcc4b0-30545025%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2e55230429a6ff12a7c7d25f875c748b50230de6' => 
     array (
       0 => 'templates\\newClientSales.tpl',
-      1 => 1363473746,
+      1 => 1366388561,
       2 => 'file',
     ),
   ),
@@ -95,11 +95,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                           </tr>
                           <tr>
                             <td><label>Hosting:</label></td>
-                            <td><input type="text" disabled name="hosting"></td>
+                            <td>
+                                <input type="text" disabled name="hosting">
+                                <select name="seltecthosting" id="seltecthosting">
+                                    <option value="Internal">Internal</option>
+                                    <option value="External">External</option>
+                                    <option value="Unknown">Unknown</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td><label>Domain:</label></td>
-                            <td><input type="text" disabled name="domain"></td>
+                            <td>
+                                <input type="text" disabled name="domain">
+                                <select name="seltecthosting" id="seltecthosting">
+                                    <option value="Acquire">Acquire</option>
+                                    <option value="Existing">Existing</option>
+                                </select>
+                            </td>
                         </tr>
 
                     </tbody>
